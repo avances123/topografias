@@ -1,0 +1,6 @@
+encoding  utf-8
+source cova.th
+
+export model -format survex
+export map -projection plan -o cave_m.pdf
+export atlas -projection plan -o cave_a.pdf
