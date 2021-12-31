@@ -1,11 +1,19 @@
 encoding  utf-8
- survey arquets  -title "Cova dels arquets" -entrance 0
- 
-   centerline
-     team "Fabio"
-     date 2021.12.22
-     calibrate depth 0 -1
-     data diving station depth newline tape compass
+survey arquets  -title "Cova dels arquets" -entrance 0@inicial
+
+  map mapa -projection plan
+    inicial
+  endmap
+
+
+  survey inicial 
+
+    centerline
+      team "Fabio"
+      date 2021.12.22
+      calibrate depth 0 -1 #Pongo la profundidad en negativo
+      # Aqui uso backcompass porque joel me lo dio el rumbo al reves
+      data diving station depth newline tape backcompass
       0 7.3
         12 60 
       1 7
@@ -13,8 +21,24 @@ encoding  utf-8
       2 6.1
         6 90
       3 4.8
-     
-    
-   endcenterline
+    endcenterline
+
+  endsurvey
+
+  survey inventado
+    centerline
+      team "Fabio"
+      date 2021.12.31
+      calibrate depth 0 -1 #Pongo la profundidad en negativo
+      # Aqui uso backcompass porque joel me lo dio el rumbo al reves
+      data diving station depth newline tape compass
+      0 4.8
+        40 270
+      1 1.8 
+    endcenterline
+
+  endsurvey
+
+  equate 0@inventado 3@inicial 
  
- endsurvey
+endsurvey
