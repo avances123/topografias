@@ -8,10 +8,12 @@ survey arquets  -title "Cova dels arquets" -entrance 0@inicial
 
   survey inicial 
 
-    centerline
+    centerline 
       team "Fabio"
       date 2021.12.22
       calibrate depth 0 -1 #Pongo la profundidad en negativo
+      cs EPSG:25831
+      fix 0 517568.21 4656254.48 -8
       # Aqui uso backcompass porque joel me lo dio el rumbo al reves
       data diving station depth newline tape backcompass
       0 7.3
