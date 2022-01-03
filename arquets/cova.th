@@ -1,15 +1,16 @@
 encoding  utf-8
 survey arquets  -title "Cova dels arquets" -entrance 0@inicial
 
+  input cova.th2
   map mapa -projection plan
-    inicial
+    scrap1
   endmap
 
 
   survey inicial 
 
     centerline 
-      team "Fabio"
+      team "Fabio Rueda"
       date 2021.12.22
       calibrate depth 0 -1 #Pongo la profundidad en negativo
       cs EPSG:25831
@@ -29,7 +30,7 @@ survey arquets  -title "Cova dels arquets" -entrance 0@inicial
 
   survey inventado
     centerline
-      team "Fabio"
+      team "Fabio Rueda"
       date 2021.12.31
       calibrate depth 0 -1 #Pongo la profundidad en negativo
       # Aqui uso backcompass porque joel me lo dio el rumbo al reves
