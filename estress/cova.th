@@ -1,0 +1,12 @@
+encoding  utf-8
+survey arquets  -title "Galeria del stress" 
+
+  input cova.th2
+  map mapa -projection plan
+    scrap1
+  endmap
+
+
+ 
+endsurvey
+
