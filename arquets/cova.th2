@@ -1,5 +1,5 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -132.0 -3636 2608 141.0
+##XTHERION## xth_me_area_adjust -136.0 -3636 2608 144.0
 ##XTHERION## xth_me_area_zoom_to 50
 ##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} ../../topo_arquets.jpg 0 {}
 
@@ -110,6 +110,12 @@ line wall
   2081.0 -2302.0
   2078.0 -2364.0
 endline
+
+point 1822.0 -2284.0 dimensions -value [3 0]
+
+point 2048.0 -2260.0 dimensions -value [4 0]
+
+point 1616.0 -2334.0 dimensions -value [6 3]
 
 endscrap
 

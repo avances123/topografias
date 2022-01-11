@@ -2,7 +2,7 @@ encoding  utf-8
 language es
 source cova.th
 
-export model -format survex
+export model -format loch
 export map -projection plan  -o cave_m.pdf
 #export atlas -projection plan -o cave_a.pdf
 export model -fmt kml -output cova_dels_arquets.kml

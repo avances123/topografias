@@ -7,6 +7,6 @@ xth_cp_map_tree_insert projection 0 p1 {} 0 plan {} {} {}
 xth_cp_map_tree_insert map 1 62X1 p1 1 mapa mapa@arquets "" ""
 xth_cp_map_tree_create
 xth_cp_comp_stat 0 1
-set xth(th_exit_state) 2
-set xth(th_exit_number) 1641769583
+set xth(th_exit_state) 1
+set xth(th_exit_number) 1641934371
 

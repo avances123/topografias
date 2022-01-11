@@ -258,16 +258,19 @@ line contour -reverse on
   2362.0 -714.0
   2362.0 -714.0 2310.0 -862.0 2344.0 -924.0
   2378.0 -986.0 2348.0 -1172.0 2478.0 -1208.0
+  smooth off
 endline
 
 line contour
   2306.0 -1038.0
   2306.0 -1038.0 2186.0 -872.0 2302.0 -723.0
+  smooth off
 endline
 
 line contour -reverse on
   2226.0 -748.0
   2226.0 -748.0 2158.0 -926.0 2228.0 -1023.0
+  smooth off
 endline
 
 area clay
@@ -277,6 +280,7 @@ endarea
 line contour -reverse on
   2250.0 -1216.0
   2250.0 -1216.0 2236.0 -1322.0 2286.0 -1342.0
+  smooth off
 endline
 
 line border -id l46-1926--558 -reverse on -subtype invisible
@@ -319,11 +323,13 @@ endline
 line contour
   1228.0 -614.0
   1228.0 -614.0 1360.0 -716.0 1236.0 -866.0
+  smooth off
 endline
 
 line contour
   1196.0 -645.0
   1196.0 -645.0 1252.0 -740.0 1196.0 -816.0
+  smooth off
 endline
 
 line rock-edge -close on
@@ -339,11 +345,13 @@ point 664.0 -848.0 debris
 line floor-step
   585.0 -701.0
   585.0 -701.0 620.0 -736.0 600.0 -933.0
+  smooth off
 endline
 
 line contour -reverse on
   1076.0 -680.0
   1076.0 -680.0 1048.0 -784.0 1097.0 -836.0
+  smooth off
 endline
 
 line survey
