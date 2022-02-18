@@ -1,0 +1,38 @@
+encoding  utf-8
+survey CDA  -title "Cueva del agua" 
+
+  #input cova.th2
+  # map mapa -projection plan
+  #   scrap1
+  # endmap
+
+
+  survey gemelas_con_rubio
+
+    centerline 
+      team "Fabio Rueda"
+      date 2022.02.16
+      calibrate depth 0 -1 #Pongo la profundidad en negativo
+      calibrate tape 0 2 # Nudos cada 2 metros
+      cs EPSG:25831
+      data diving station depth newline compass tape 
+      0 10.7
+        140 4.6
+      1 11.8
+        140 4
+      2T 8.4
+        45 9.6
+      3A 14.9
+        130 0.6
+      3B 14.9
+        210 10
+      4 11.3
+        340 5
+      5T 8.5
+    endcenterline
+
+  endsurvey
+
+  equate 2T@gemelas_con_rubio 5T@gemelas_con_rubio
+ 
+endsurvey
