@@ -1,10 +1,14 @@
- encoding  utf-8
+encoding  utf-8
  language es
  source cova.th
  
  layout todo
- symbol-show group centerline
- legend on
+ map-header 0 100 sw # pone el header arriba a la izquierda
+ statistics topo-length on #on
+ statistics explo-length on
+ rotate 30 #on
+ #symbol-show group centerline
+ legend off
  code metapost
  
    def l_survey_cave (expr P) =
@@ -25,7 +29,8 @@
  
  
  export model -fmt loch
- export map -layout todo -projection plan  -o cave_m.pdf
+export map -layout todo -projection plan  -o cave_m.pdf
+# export map -projection plan  -o cave_m.pdf
  #export atlas -projection plan -o cave_a.pdf
  #export model -fmt kml -output cova_dels_arquets.kml
  #export cave-list -location on

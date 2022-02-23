@@ -1,37 +1,35 @@
 encoding  utf-8
-survey CDA  -title "Cueva del agua" 
+survey CDA  -title "Galeria Encajonada" 
 
-  #input cova.th2
-  # map mapa -projection plan
-  #   scrap1
-  # endmap
+  input cova.th2
+  map mapa -projection plan
+    scrap1
+  endmap
 
 
-  survey encajonada
 
-    centerline 
-      team "Fabio Rueda"
-      date 2022.02.18
-      calibrate depth 0 -1 #Pongo la profundidad en negativo
-      calibrate tape 0 2 # Nudos cada 2 metros
-      cs EPSG:25831
-      data diving station depth newline  tape backcompass
-      0 10
-        5 170
-      1 11
-        11 170
-      2 9.5
-        3 170
-      3 10
-        1.5 210
-      4 8.9
-        15.6 250
-      5 11.8
-        2.1 280
-      6 11.4
-    endcenterline
+  centerline 
+    team "Fabio Rueda"
+    date 2022.02.18
+    calibrate depth 0 -1 #Pongo la profundidad en negativo
+    calibrate tape 0 2 # Nudos cada 2 metros
+    cs EPSG:25831
+    data diving station depth newline  tape backcompass
+    0 10
+      5 170
+    1 11
+      11 180
+    2 9.5
+      3 180
+    3 10
+      1.5 210
+    4 8.9
+      15.6 250
+    5 11.8
+      2.1 280
+    6 11.4
+  endcenterline
 
-  endsurvey
 
  
 endsurvey
