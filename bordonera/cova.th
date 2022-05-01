@@ -1,0 +1,34 @@
+encoding  utf-8
+survey arquets  -title "Font Bordonera" -entrance 7@inicial
+
+  survey inicial 
+
+    centerline 
+      team "Fabio Rueda"
+      team "Joel Llebot"
+      date 2022.06.01
+      calibrate depth 0 -1 #Pongo la profundidad en negativo
+      calibrate tape 0 2 # Nudos cada 2 metros
+      cs EPSG:25831
+      fix 0 517568.21 4656254.48 -8
+      data diving station depth newline compass tape
+      0 17.1
+        110 5
+      1 13
+        20 1.5
+      2 12.3
+        85 9
+      3 15.6
+        110 6
+      4 13.6
+        50 6
+      5 12.9
+        90 6
+      6 8.9
+        130 8
+      7 5.4
+    endcenterline
+
+  endsurvey
+ 
+endsurvey
