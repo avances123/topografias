@@ -1,5 +1,5 @@
 encoding  utf-8
-survey arquets  -title "Font Bordonera" -entrance 7@inicial
+survey bordonera  -title "La Font Bordonera" -entrance 8@inicial
 
   survey inicial 
 
@@ -10,7 +10,7 @@ survey arquets  -title "Font Bordonera" -entrance 7@inicial
       calibrate depth 0 -1 #Pongo la profundidad en negativo
       calibrate tape 0 2 # Nudos cada 2 metros
       cs EPSG:25831
-      fix 0 517568.21 4656254.48 -8
+      fix 8 359481.88 4673841.60 0
       data diving station depth newline compass tape
       0 17.1
         110 5
@@ -27,6 +27,8 @@ survey arquets  -title "Font Bordonera" -entrance 7@inicial
       6 8.9
         130 8
       7 5.4
+        100 3
+      8 0
     endcenterline
 
   endsurvey

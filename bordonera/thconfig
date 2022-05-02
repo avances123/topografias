@@ -5,5 +5,5 @@ source cova.th
 #export model -format loch
 export map -projection plan  -o cave_m.pdf
 #export atlas -projection plan -o cave_a.pdf
-#export model -fmt kml -output cova_dels_arquets.kml
+export model -fmt kml -output bordonera.kml
 #export cave-list -location on
