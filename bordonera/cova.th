@@ -6,7 +6,7 @@ survey bordonera  -title "La Font Bordonera" -entrance 8@inicial
     centerline 
       team "Fabio Rueda"
       team "Joel Llebot"
-      date 2022.06.01
+      date 2022.04.01
       calibrate depth 0 -1 #Pongo la profundidad en negativo
       calibrate tape 0 2 # Nudos cada 2 metros
       cs EPSG:25831
@@ -33,4 +33,33 @@ survey bordonera  -title "La Font Bordonera" -entrance 8@inicial
 
   endsurvey
  
+  survey mayo 
+
+    centerline 
+      team "Fabio Rueda"
+      team "Lluis Vila"
+      date 2022.05.14
+      calibrate depth 0 -1 #Pongo la profundidad en negativo
+      calibrate tape 0 2 # Nudos cada 2 metros
+      cs EPSG:25831
+      fix 8 359481.88 4673841.60 0
+      data diving station depth newline compass tape
+      0 17
+        95 8
+      1 10.8
+        110 2
+      2 11.6
+        90 5
+      3 14.7
+        95 3
+      4 15.3
+        60 6
+      5 17.1
+    endcenterline
+
+  endsurvey
+
+  equate 0@inicial 5@mayo
+
+
 endsurvey
