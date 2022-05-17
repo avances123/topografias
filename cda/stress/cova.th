@@ -1,5 +1,5 @@
 encoding  utf-8
-survey arquets  -title "Galeria del stress" 
+survey stress  -title "Galeria del stress" 
 
   input cova.th2
   map mapa -projection plan
@@ -7,6 +7,17 @@ survey arquets  -title "Galeria del stress"
   endmap
 
 
- 
+  centerline 
+    team "Fabio Rueda"
+    date 2022.02.18
+    calibrate depth 0 -1 #Pongo la profundidad en negativo
+    calibrate tape 0 2 # Nudos cada 2 metros
+    cs EPSG:25831
+    data diving station depth newline  tape backcompass
+    0 11
+      
+  endcenterline
+
+
 endsurvey
 

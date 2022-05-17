@@ -1,0 +1,30 @@
+encoding  utf-8
+survey CDA  -title "Cueva del Agua" 
+
+
+
+  input ../stress/cova.th
+  input ../encajonada/cova.th
+
+  survey salto
+
+    centerline
+      team "Fabio Rueda"
+      date 2022.02.18
+      calibrate depth 0 -1 #Pongo la profundidad en negativo
+      calibrate tape 0 2 # Nudos cada 2 metros
+      cs EPSG:25831
+      data diving station depth newline  tape backcompass
+      0 10
+        2 330
+      1 11
+    endcenterline
+
+  endsurvey
+
+  equate 0@encajonada 0@salto
+  equate 0@stress 1@salto
+
+
+ 
+endsurvey

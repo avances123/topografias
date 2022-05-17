@@ -1,5 +1,5 @@
 encoding  utf-8
-survey CDA  -title "Galeria Encajonada" 
+survey encajonada  -title "Galeria Encajonada" 
 
   input cova.th2
   map mapa -projection plan
