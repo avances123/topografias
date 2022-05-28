@@ -1,0 +1,12 @@
+set xth(ctrl,cp,datlist) {}
+xth_cp_data_tree_insert 1 {} 0   "" "" "length: 67.60m (surface 0.00m, duplicated 0.00m)\nvertical range: 8.66m (from 2T@gemelas_con_rubio.CDA at 0.00m to 3A@gemelas_con_rubio.CDA at -8.66m)\nnorth-south range: 18.88m (from 3A@gemelas_con_rubio.CDA at 12.81m to 4@gemelas_con_rubio.CDA at -6.07m)\neast-west range: 25.30m (from 3B@gemelas_con_rubio.CDA at 14.77m to 0@gemelas_con_rubio.CDA at -10.53m)\nnumber of shots: 6\nnumber of stations: 7"
+xth_cp_data_tree_insert 19 1 1 CDA CDA "Cueva del agua" "Cueva del agua" "length: 67.60m (surface 0.00m, duplicated 0.00m)\nvertical range: 8.66m (from 2T@gemelas_con_rubio.CDA at 0.00m to 3A@gemelas_con_rubio.CDA at -8.66m)\nnorth-south range: 18.88m (from 3A@gemelas_con_rubio.CDA at 12.81m to 4@gemelas_con_rubio.CDA at -6.07m)\neast-west range: 25.30m (from 3B@gemelas_con_rubio.CDA at 14.77m to 0@gemelas_con_rubio.CDA at -10.53m)\nnumber of shots: 6\nnumber of stations: 7"
+xth_cp_data_tree_insert 21 19 2 gemelas_con_rubio gemelas_con_rubio.CDA "" "" "length: 67.60m (surface 0.00m, duplicated 0.00m)\nvertical range: 8.66m (from 2T@gemelas_con_rubio.CDA at 0.00m to 3A@gemelas_con_rubio.CDA at -8.66m)\nnorth-south range: 18.88m (from 3A@gemelas_con_rubio.CDA at 12.81m to 4@gemelas_con_rubio.CDA at -6.07m)\neast-west range: 25.30m (from 3B@gemelas_con_rubio.CDA at 14.77m to 0@gemelas_con_rubio.CDA at -10.53m)\nnumber of shots: 6\nnumber of stations: 7"
+xth_cp_data_tree_create
+set xth(ctrl,cp,maplist) {}
+xth_cp_map_tree_insert projection 0 p1 {} 0 plan {} {} {}
+xth_cp_map_tree_create
+xth_cp_comp_stat 68 0
+set xth(th_exit_state) 1
+set xth(th_exit_number) 1645217696
+

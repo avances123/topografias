@@ -7,32 +7,74 @@ survey CDA  -title "Cueva del agua"
   # endmap
 
 
-  survey gemelas_con_rubio
 
+  survey gemelas1 -entrance 0
     centerline 
       team "Fabio Rueda"
-      date 2022.02.16
+      date 2022.05.24
       calibrate depth 0 -1 #Pongo la profundidad en negativo
-      calibrate tape 0 2 # Nudos cada 2 metros
+      calibrate tape 0 1 # Nudos cada 1 m
       cs EPSG:25831
-      data diving station depth newline compass tape 
-      0 10.7
-        140 4.6
-      1 11.8
-        140 4
-      2T 8.4
-        45 9.6
-      3A 14.9
-        130 0.6
-      3B 14.9
-        210 10
-      4 11.3
-        340 5
-      5T 8.5
+      data diving station depth newline  tape compass
+      0 11
+        2.8 328
+      1 11.5
+        4.8 335
+      2 12.1
+        6.5 335
+      3 8.6
+        20 220
+      4 15
+        2.2 300
+      5 15.3
+        18.6 20
+      6 11
+        2 100
+      7 10.3
+        1.8 113
+      8 10.4
+        9.3 132
+      9 8.7
     endcenterline
-
+    
   endsurvey
 
-  equate 2T@gemelas_con_rubio 5T@gemelas_con_rubio
+  survey gemelas2
+    centerline 
+      team "Fabio Rueda"
+      date 2022.05.24
+      calibrate depth 0 -1 #Pongo la profundidad en negativo
+      calibrate tape 0 1 # Nudos cada 1 m
+      cs EPSG:25831
+      data diving station depth newline  tape compass
+      0 10.4
+        13 320
+      1 14.7
+    endcenterline
+    
+  endsurvey
+
+
+   survey gemelas3
+    centerline 
+      team "Fabio Rueda"
+      date 2022.05.24
+      calibrate depth 0 -1 #Pongo la profundidad en negativo
+      calibrate tape 0 1 # Nudos cada 1 m
+      cs EPSG:25831
+      data diving station depth newline  tape compass
+      9 8.7
+        10.1 34
+      10 6.6
+        21.2 18
+      11 12.8
+    endcenterline
+    
+  endsurvey
  
+  equate 3@gemelas1 9@gemelas1
+  equate 3@gemelas1 9@gemelas3
+  equate 8@gemelas1 0@gemelas2
+
+
 endsurvey
