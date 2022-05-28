@@ -9,6 +9,7 @@ encoding  utf-8
  rotate 30 #on
  #symbol-show group centerline
  legend off
+ debug on
  code metapost
  
    def l_survey_cave (expr P) =
@@ -26,9 +27,11 @@ encoding  utf-8
  endlayout
  
  
+select mapa@CDA
  
  
  export model -fmt loch
+#export map -layout-debug station-names
 export map -layout todo -projection plan  -o cave_m.pdf
 # export map -projection plan  -o cave_m.pdf
  #export atlas -projection plan -o cave_a.pdf

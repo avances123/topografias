@@ -513,7 +513,7 @@ point 1186.0 -766.0 station
 
 point 1072.0 -808.0 station
 
-point 748.0 -902.0 station
+point 748.0 -902.0 station -name 1
 
 point 521.0 -868.0 station -name 0
 

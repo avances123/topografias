@@ -1,5 +1,5 @@
 encoding  utf-8
-survey CDA  -title "Cueva del Agua" 
+survey CDA  -title "Cueva del agua: primeros 150m" 
 
 
 
@@ -26,5 +26,14 @@ survey CDA  -title "Cueva del Agua"
   equate 0@stress 1@salto
 
 
- 
+
+
+  map mapa -projection plan
+    mapa@encajonada
+    mapa@stress
+    
+  endmap
+
+  join scrap1@encajonada scrap1@stress
+
 endsurvey

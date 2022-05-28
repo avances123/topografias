@@ -13,9 +13,11 @@ survey stress  -title "Galeria del stress"
     calibrate depth 0 -1 #Pongo la profundidad en negativo
     calibrate tape 0 2 # Nudos cada 2 metros
     cs EPSG:25831
-    data diving station depth newline  tape backcompass
+    data diving station depth newline  tape compass
     0 11
-      
+      2 90
+    1 11
+    
   endcenterline
 
 
