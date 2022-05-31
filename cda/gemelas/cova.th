@@ -1,12 +1,6 @@
 encoding  utf-8
 survey CDA  -title "Cueva del agua" 
 
-  #input cova.th2
-  # map mapa -projection plan
-  #   scrap1
-  # endmap
-
-
 
   survey gemelas1 -entrance 0
     centerline 
@@ -15,7 +9,7 @@ survey CDA  -title "Cueva del agua"
       calibrate depth 0 -1 #Pongo la profundidad en negativo
       calibrate tape 0 1 # Nudos cada 1 m
       cs EPSG:25831
-      data diving station depth newline  tape compass
+      data diving station depth newline  tape backcompass
       0 11
         2.8 328
       1 11.5
@@ -46,7 +40,7 @@ survey CDA  -title "Cueva del agua"
       calibrate depth 0 -1 #Pongo la profundidad en negativo
       calibrate tape 0 1 # Nudos cada 1 m
       cs EPSG:25831
-      data diving station depth newline  tape compass
+      data diving station depth newline  tape backcompass
       0 10.4
         13 320
       1 14.7
@@ -62,7 +56,7 @@ survey CDA  -title "Cueva del agua"
       calibrate depth 0 -1 #Pongo la profundidad en negativo
       calibrate tape 0 1 # Nudos cada 1 m
       cs EPSG:25831
-      data diving station depth newline  tape compass
+      data diving station depth newline  tape backcompass
       9 8.7
         10.1 34
       10 6.6
@@ -77,4 +71,11 @@ survey CDA  -title "Cueva del agua"
   equate 8@gemelas1 0@gemelas2
 
 
+
+ input cova.th2
+ map mapa -projection plan
+   scrap1
+ endmap
+
 endsurvey
+
