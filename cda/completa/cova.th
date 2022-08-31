@@ -1,39 +1,29 @@
 encoding  utf-8
 survey CDA  -title "Cueva del agua: primeros 150m" 
 
-
-
+  input ../gemelas/cova.th
   input ../stress/cova.th
-  input ../encajonada/cova.th
+
+
 
   survey salto
-
     centerline
       team "Fabio Rueda"
-      date 2022.02.18
-      calibrate depth 0 -1 #Pongo la profundidad en negativo
-      calibrate tape 0 2 # Nudos cada 2 metros
-      cs EPSG:25831
-      data diving station depth newline  tape backcompass
-      0 10
-        2 330
-      1 11
+			date 2022.09.01
+			calibrate depth 0 -1 #Pongo la profundidad en negativo
+			calibrate tape 0 1 # Nudos cada 1 m
+			cs EPSG:25831
+			data diving station depth newline  tape compass
+			0 11
+			  60 45
+			1 11
+			  
     endcenterline
-
   endsurvey
 
-  equate 0@encajonada 0@salto
-  equate 0@stress 1@salto
+	equate 0@salto 0@gemelas1.gemelas
+  equate 1@salto 0@hilo_principal.stress
 
 
-
-
-  map mapa -projection plan
-    mapa@encajonada
-    mapa@stress
-    
-  endmap
-
-  join scrap1@encajonada scrap1@stress
 
 endsurvey

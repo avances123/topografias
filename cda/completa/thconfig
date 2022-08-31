@@ -27,7 +27,7 @@ encoding  utf-8
  endlayout
  
  
-select mapa@CDA
+#select mapa@CDA
  
  
  export model -fmt loch

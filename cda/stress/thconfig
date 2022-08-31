@@ -3,7 +3,7 @@ language es
 source cova.th
 
 layout todo
-  rotate 270
+
 
 symbol-show group centerline
 legend on
