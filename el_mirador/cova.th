@@ -1,0 +1,124 @@
+encoding  utf-8
+survey mirador  -title "El Mirador"
+	
+	survey elmirador1
+
+		survey mirador1 -entrance 0
+			centerline
+				team "Fabio Rueda"
+				date 2022.09.10
+				calibrate depth 0 -1 #Pongo la profundidad en negativo
+				calibrate tape 0 1 # Nudos cada 1 m
+				cs EPSG:25831
+				data diving station depth newline  compass tape
+				0 6
+					140 5.7
+				1 6.8
+					242	3.3
+				2 5.4
+					312	5
+				3 6
+					35	4.5
+				4 6
+					265	1.5
+				5 5
+					270	3
+				6 4.7 	
+			endcenterline
+		endsurvey
+
+		survey mirador2 
+			centerline
+				team "Fabio Rueda"
+				date 2022.09.10
+				calibrate depth 0 -1 #Pongo la profundidad en negativo
+				calibrate tape 0 1 # Nudos cada 1 m
+				cs EPSG:25831
+				data diving station depth newline  compass tape
+				0 5
+					70 3.3
+				1 6
+			endcenterline
+		endsurvey
+		
+		survey mirador3
+			centerline
+				team "Fabio Rueda"
+				date 2022.09.10
+				calibrate depth 0 -1 #Pongo la profundidad en negativo
+				calibrate tape 0 1 # Nudos cada 1 m
+				cs EPSG:25831
+				data diving station depth newline  compass tape
+				0 6.8
+					150 6
+				1 6
+			endcenterline
+		endsurvey
+
+		survey mirador4
+			centerline
+				team "Fabio Rueda"
+				date 2022.09.10
+				calibrate depth 0 -1 #Pongo la profundidad en negativo
+				calibrate tape 0 1 # Nudos cada 1 m
+				cs EPSG:25831
+				data diving station depth newline  compass tape
+				0 5.4
+					222 4
+				1 5
+			endcenterline
+		endsurvey
+
+		survey pozo
+			centerline
+				team "Fabio Rueda"
+				date 2022.09.10
+				calibrate depth 0 -1 #Pongo la profundidad en negativo
+				calibrate tape 0 1 # Nudos cada 1 m
+				cs EPSG:25831
+				data diving station depth newline  compass tape
+				0 6.8
+					270 4.5
+				1 11.2
+					70 8
+				2 9
+			endcenterline
+		endsurvey
+			
+		equate 0@mirador1 4@mirador1
+		equate 1@mirador2 3@mirador1
+		equate 1@mirador1 0@mirador3
+		equate 2@mirador1 0@mirador4
+		equate 1@mirador1 0@pozo
+	
+	endsurvey
+
+	survey elmirador2
+		centerline
+			team "Fabio Rueda"
+			date 2022.09.10
+			calibrate depth 0 -1 #Pongo la profundidad en negativo
+			calibrate tape 0 1 # Nudos cada 1 m
+			cs EPSG:25831
+			data diving station depth newline tape compass 
+			0 5.7
+				8 70 # TODO union entre los dos miradores, medir bien
+			1 6.2
+				4.9 190
+			2 5.8
+				3.5 163
+			3 5.3
+		endcenterline
+	endsurvey
+
+
+	equate 0@mirador1.elmirador1 0@elmirador2
+
+
+	# input cova.th2
+	# map mapa -projection plan
+	# 	scrap1
+	# endmap
+	
+endsurvey
+
