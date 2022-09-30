@@ -1,0 +1,78 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -128 -1082 1501 128
+##XTHERION## xth_me_area_zoom_to 100
+##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} fondo.png 0 {}
+
+
+
+scrap scrap1 -scale [0 0 1244.0 0.0 0.0 0.0 40.64 0.0 m]
+
+point 40.0 -313.0 station -subtype fixed -name -1@caverna_mar
+
+point 189.0 -380.0 station -subtype fixed -name 0@caverna_mar
+
+point 390.0 -454.0 station -subtype fixed -name 1@caverna_mar
+
+point 699.0 -396.0 station -subtype fixed -name 2@caverna_mar
+
+point 741.0 -511.0 station
+
+point 819.0 -315.0 station -subtype fixed -name 5@caverna_galeria_izquierda
+
+point 796.0 -354.0 station
+
+point 810.0 -401.0 station
+
+point 992.0 -538.0 station
+
+point 914.0 -823.0 station
+
+point 667.0 -638.0 station
+
+point 784.0 -692.0 station
+
+point 982.0 -497.0 station
+
+point 1047.0 -442.0 station
+
+point 1170.0 -338.0 station
+
+point 1173.0 -289.0 station
+
+point 1189.0 -124.0 station
+
+point 784.0 -692.0 station -subtype fixed -name 6@hilo_caverna
+
+point 667.0 -638.0 station -subtype fixed -name 7@hilo_caverna
+
+point 741.0 -511.0 station -subtype fixed -name 3@caverna_mar
+
+point 796.0 -354.0 station -subtype fixed -name 4@caverna_galeria_izquierda
+
+point 810.0 -401.0 station -subtype fixed -name 3@caverna_galeria_izquierda
+
+point 1047.0 -442.0 station -subtype fixed -name 2@caverna_gemelas
+
+point 992.0 -538.0 station -subtype fixed -name 1@caverna_gemelas
+
+point 914.0 -823.0 station -subtype fixed -name 0@caverna_gemelas
+
+point 667.0 -638.0 station -subtype fixed -name 7@hilo_caverna
+
+point 784.0 -692.0 station -subtype fixed -name 6@hilo_caverna
+
+point 982.0 -497.0 station -subtype fixed -name 5@hilo_caverna
+
+point 1047.0 -442.0 station -subtype fixed -name 4@hilo_caverna
+
+point 1170.0 -338.0 station -subtype fixed -name 3@hilo_caverna
+
+point 1173.0 -289.0 station -subtype fixed -name 2@hilo_caverna
+
+point 1189.0 -124.0 station -subtype fixed -name 1@hilo_caverna
+
+point 1210.0 -134.0 station -subtype fixed -name 0@hilo_caverna
+
+endscrap
+
+

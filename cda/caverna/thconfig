@@ -9,15 +9,14 @@ encoding  utf-8
   rotate 30 #on
   symbol-show group centerline
   legend off
-  debug on
-  transparency on
-  opacity 20
-
-
+  debug off
   code metapost
+ 
 
+  transparency on
+  opacity 10
 
-  color map-fg [00 90 90]
+  color map-fg [00 20 40]
 
    def l_survey_cave (expr P) =
      T:=identity;
@@ -32,9 +31,7 @@ encoding  utf-8
  
  endlayout
  
-#select mapa@gemelas.CDA
-#select mapa@caverna.CDA
-#select mapa@stress.CDA
+ 
  
  
  export model -fmt loch
