@@ -5,6 +5,7 @@ encoding  utf-8
  layout todo
  symbol-show group centerline
  legend on
+ debug on
 
  map-header -40 100 nw
 

@@ -3,15 +3,21 @@ encoding  utf-8
  source cova.th
  
  layout todo
- map-header 0 100 sw # pone el header arriba a la izquierda
- statistics topo-length on #on
- statistics explo-length on
- rotate 30 #on
- #symbol-show group centerline
- legend off
- debug on
- code metapost
+  map-header 0 100 sw # pone el header arriba a la izquierda
+  statistics topo-length on #on
+  statistics explo-length on
+  rotate 30 #on
+  symbol-show group centerline
+  legend off
+  debug off
+  code metapost
  
+
+  transparency on
+  opacity 10
+
+  color map-fg [00 20 40]
+
    def l_survey_cave (expr P) =
      T:=identity;
      pair zz[];
@@ -23,17 +29,15 @@ encoding  utf-8
      endfor;
    enddef;
  
- 
  endlayout
  
  
-#select mapa@CDA
  
  
  export model -fmt loch
-#export map -layout-debug station-names
+ #export map -layout-debug station-names
 export map -layout todo -projection plan  -o cave_m.pdf
-# export map -projection plan  -o cave_m.pdf
+ #export map -projection plan  -o cave_m.pdf
  #export atlas -projection plan -o cave_a.pdf
  #export model -fmt kml -output cova_dels_arquets.kml
  #export cave-list -location on

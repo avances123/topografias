@@ -1,14 +1,9 @@
 encoding  utf-8
-survey stress  -title "Galeria del stress agua" 
-
-  input cova.th2
-  map mapa -projection plan
-    scrap1
-  endmap
+survey stress  -title "Primeros metros de hilo cda" 
 
 
 
-  survey hilo_principal -entrance 0
+  survey hilo_principal 
     centerline 
       team "Fabio Rueda"
       date 2022.05.24
@@ -67,5 +62,13 @@ survey stress  -title "Galeria del stress agua"
 
   equate 3@hilo_principal 0@stress
   
+
+
+
+  input cova.th2
+  map mapa -projection plan
+    scrap1
+  endmap
+
 
 endsurvey

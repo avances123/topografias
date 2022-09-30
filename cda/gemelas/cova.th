@@ -1,7 +1,7 @@
 encoding  utf-8
 survey gemelas  -title "Las Gemelas"
 	
-	survey gemelas1 -entrance 0
+	survey gemelas1
 		centerline
 			team "Fabio Rueda"
 			date 2022.05.24
@@ -97,6 +97,24 @@ survey gemelas  -title "Las Gemelas"
 		endcenterline	
 	endsurvey
 
+	survey union_gemelas
+		centerline
+			team "Fabio Rueda"
+			date 2022.08.13
+			calibrate depth 0 -1 #Pongo la profundidad en negativo
+			calibrate tape 0 1 # Nudos cada 1 m
+			cs EPSG:25831
+			data diving station depth newline  tape compass
+			0 12.8
+				11 60
+			1 11.1
+				19 70
+			2 14.7
+		endcenterline	
+	endsurvey
+
+	equate 1@gemelas2 2@union_gemelas
+	equate 11@gemelas3 0@union_gemelas
 	equate 3@gemelas1 9@gemelas1
 	equate 3@gemelas1 9@gemelas3
 	equate 8@gemelas1 0@gemelas2
