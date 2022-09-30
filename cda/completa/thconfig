@@ -6,7 +6,7 @@ encoding  utf-8
   map-header 0 100 sw # pone el header arriba a la izquierda
   statistics topo-length on #on
   statistics explo-length on
-  rotate 30 #on
+  #rotate 30 #on
   symbol-show group centerline
   legend off
   debug on
