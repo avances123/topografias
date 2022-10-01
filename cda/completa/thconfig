@@ -12,13 +12,10 @@ encoding  utf-8
   debug on
   transparency on
   opacity 20
+  color map-fg [00 90 90]
 
 
   code metapost
-
-
-  color map-fg [00 90 90]
-
    def l_survey_cave (expr P) =
      T:=identity;
      pair zz[];

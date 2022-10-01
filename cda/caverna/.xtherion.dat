@@ -1,12 +1,16 @@
 set xth(ctrl,cp,datlist) {}
-xth_cp_data_tree_insert 1 {} 0   "" "" "length: 76.40m (surface 0.00m, duplicated 0.00m)\nvertical range: 2.90m (from 4@CDA at 1.10m to 5@CDA at -1.80m)\nnorth-south range: 50.77m (from 5@CDA at 50.77m to 0@CDA at 0.00m)\neast-west range: 34.70m (from 6@CDA at 32.98m to 1@CDA at -1.73m)\nnumber of shots: 6\nnumber of stations: 7"
-xth_cp_data_tree_insert 19 1 1 CDA CDA "Galeria Encajonada" "Galeria Encajonada" "length: 76.40m (surface 0.00m, duplicated 0.00m)\nvertical range: 2.90m (from 4@CDA at 1.10m to 5@CDA at -1.80m)\nnorth-south range: 50.77m (from 5@CDA at 50.77m to 0@CDA at 0.00m)\neast-west range: 34.70m (from 6@CDA at 32.98m to 1@CDA at -1.73m)\nnumber of shots: 6\nnumber of stations: 7"
+xth_cp_data_tree_insert 1 {} 0   "" "" "length: 161.70m (surface 0.00m, duplicated 0.00m)\nvertical range: 6.40m (from 1@caverna_mar.caverna at 4.40m to 6@hilo_caverna.caverna at -2.00m)\nnorth-south range: 45.78m (from 0@hilo_caverna.caverna at 21.49m to 0@caverna_gemelas.caverna at -24.29m)\neast-west range: 62.23m (from 0@caverna_gemelas.caverna at 4.68m to -1@caverna_mar.caverna at -57.55m)\nnumber of shots: 17\nnumber of stations: 21"
+xth_cp_data_tree_insert 19 1 1 caverna caverna "Cueva del agua: caverna" "Cueva del agua: caverna" "length: 161.70m (surface 0.00m, duplicated 0.00m)\nvertical range: 6.40m (from 1@caverna_mar.caverna at 4.40m to 6@hilo_caverna.caverna at -2.00m)\nnorth-south range: 45.78m (from 0@hilo_caverna.caverna at 21.49m to 0@caverna_gemelas.caverna at -24.29m)\neast-west range: 62.23m (from 0@caverna_gemelas.caverna at 4.68m to -1@caverna_mar.caverna at -57.55m)\nnumber of shots: 17\nnumber of stations: 21"
+xth_cp_data_tree_insert 21 19 2 hilo_caverna hilo_caverna.caverna "" "" "length: 56.00m (surface 0.00m, duplicated 0.00m)\nvertical range: 3.80m (from 7@hilo_caverna.caverna at 1.80m to 6@hilo_caverna.caverna at -2.00m)\nnorth-south range: 43.52m (from 0@hilo_caverna.caverna at 21.49m to 7@hilo_caverna.caverna at -22.03m)\neast-west range: 17.71m (from 3@hilo_caverna.caverna at 3.39m to 7@hilo_caverna.caverna at -14.32m)\nnumber of shots: 7\nnumber of stations: 8"
+xth_cp_data_tree_insert 25 19 2 caverna_gemelas caverna_gemelas.caverna "" "" "length: 25.90m (surface 0.00m, duplicated 0.00m)\nvertical range: 3.60m (from 1@caverna_gemelas.caverna at 3.60m to 2@caverna_gemelas.caverna at 0.00m)\nnorth-south range: 24.29m (from 2@caverna_gemelas.caverna at 0.00m to 0@caverna_gemelas.caverna at -24.29m)\neast-west range: 4.68m (from 0@caverna_gemelas.caverna at 4.68m to 1@caverna_gemelas.caverna at 0.00m)\nnumber of shots: 2\nnumber of stations: 3"
+xth_cp_data_tree_insert 29 19 2 caverna_galeria_izquierda caverna_galeria_izquierda.caverna "" "" "length: 21.00m (surface 0.00m, duplicated 0.00m)\nvertical range: 1.60m (from 2@caverna_galeria_izquierda.caverna at 0.00m to 4@caverna_galeria_izquierda.caverna at -1.60m)\nnorth-south range: 5.12m (from 2@caverna_galeria_izquierda.caverna at 0.00m to 3@caverna_galeria_izquierda.caverna at -5.12m)\neast-west range: 16.10m (from 2@caverna_galeria_izquierda.caverna at 0.00m to 4@caverna_galeria_izquierda.caverna at -16.10m)\nnumber of shots: 3\nnumber of stations: 4"
+xth_cp_data_tree_insert 33 19 2 caverna_mar caverna_mar.caverna "" "" "length: 58.80m (surface 0.00m, duplicated 0.00m)\nvertical range: 2.60m (from 1@caverna_mar.caverna at 4.40m to 4@caverna_mar.caverna at 1.80m)\nnorth-south range: 15.63m (from 2@caverna_mar.caverna at -8.41m to -1@caverna_mar.caverna at -24.04m)\neast-west range: 43.23m (from 3@caverna_mar.caverna at -14.32m to -1@caverna_mar.caverna at -57.55m)\nnumber of shots: 5\nnumber of stations: 6"
 xth_cp_data_tree_create
 set xth(ctrl,cp,maplist) {}
 xth_cp_map_tree_insert projection 0 p1 {} 0 plan {} {} {}
-xth_cp_map_tree_insert map 1 55X1 p1 1 mapa mapa@CDA "" ""
+xth_cp_map_tree_insert map 1 65X1 p1 1 mapa mapa@caverna "" ""
 xth_cp_map_tree_create
-xth_cp_comp_stat 76 1
-set xth(th_exit_state) 2
-set xth(th_exit_number) 1645659986
+xth_cp_comp_stat 162 1
+set xth(th_exit_state) 1
+set xth(th_exit_number) 1664619568
 
