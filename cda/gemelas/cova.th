@@ -123,10 +123,10 @@ survey gemelas  -title "Las Gemelas"
 	
 
 
-	input cova.th2
-	map mapa -projection plan
-		scrap1
-	endmap
+	# input cova.th2
+	# map mapa -projection plan
+	# 	scrap1
+	# endmap
 	
 endsurvey
 

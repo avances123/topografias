@@ -9,10 +9,13 @@ encoding  utf-8
   #rotate 30 #on
   symbol-show group centerline
   legend off
-  debug on
+  debug off
   transparency on
   opacity 20
   color map-fg [00 90 90]
+  #symbol-hide group centerline
+  #symbol-show point station:temporary
+
 
 
   code metapost
@@ -23,6 +26,7 @@ encoding  utf-8
      for t = 0 upto length P - 1:
        zz1 := point t of P;
        zz2 := point t+1 of P;
+       #message "zz1: " & str zz1;
        draw zz1 -- zz2 withcolor (0.8,0.0,0.0);
      endfor;
    enddef;

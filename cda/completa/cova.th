@@ -6,8 +6,10 @@ survey CDA  -title "Cueva del agua: primeros 150m"
   input ../caverna/cova.th
 
 
-  equate 0@hilo_caverna.caverna 0@hilo_principal.stress
+  equate 0@hilo_caverna.caverna 0@hilo_principal_principio_encajonada.stress
   equate 0@caverna_gemelas.caverna 0@gemelas1.gemelas
 
+
+  # join scrap1@caverna scrap1@gemelas
 
 endsurvey

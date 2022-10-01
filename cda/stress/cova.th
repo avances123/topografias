@@ -3,7 +3,7 @@ survey stress  -title "Primeros metros de hilo cda"
 
 
 
-  survey hilo_principal 
+  survey hilo_principal_principio_encajonada 
     centerline 
       team "Fabio Rueda"
       date 2022.05.24
@@ -26,10 +26,7 @@ survey stress  -title "Primeros metros de hilo cda"
       6 9.4
         5 170
       7 9.6
-      
-
     endcenterline
-    
   endsurvey
 
 
@@ -60,15 +57,43 @@ survey stress  -title "Primeros metros de hilo cda"
     
   endsurvey
 
-  equate 3@hilo_principal 0@stress
+
+
+  survey encajonada
+    centerline
+      	team "Fabio Rueda"
+        date 2022.10.01
+        calibrate depth 0 -1 #Pongo la profundidad en negativo
+        calibrate tape 0 1 # Nudos cada 1 m
+        cs EPSG:25831
+        data diving station depth newline  tape compass
+        0 10.2
+          2.3 40
+        1 9.3
+          15.8 65
+        2 10.4
+          6 55
+        3 10.4
+          7.5 60
+        4 11.8
+          5.5 85
+        5 11.5 # nudo con hilo pral
+
+    endcenterline
+  endsurvey
+
+
+  equate 0@encajonada 7@hilo_principal_principio_encajonada
+  equate 3@hilo_principal_principio_encajonada 0@stress
+
   
 
 
 
-  input cova.th2
-  map mapa -projection plan
-    scrap1
-  endmap
+  # input cova.th2
+  # map mapa -projection plan
+  #   scrap1
+  # endmap
 
 
 endsurvey

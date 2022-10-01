@@ -19,21 +19,21 @@ point 376.0 -666.0 station -subtype fixed -name 2@stress
 
 point 291.0 -697.0 station -subtype fixed -name 1@stress
 
-point 58.0 -51.0 station -subtype fixed -name 7@hilo_principal
+point 58.0 -51.0 station -subtype fixed -name 7@hilo_principal_principio_encajonada
 
-point 80.0 -193.0 station -subtype fixed -name 6@hilo_principal
+point 80.0 -193.0 station -subtype fixed -name 6@hilo_principal_principio_encajonada
 
-point 125.0 -437.0 station -subtype fixed -name 5@hilo_principal
+point 125.0 -437.0 station -subtype fixed -name 5@hilo_principal_principio_encajonada
 
-point 234.0 -648.0 station -subtype fixed -name 4@hilo_principal
+point 234.0 -648.0 station -subtype fixed -name 4@hilo_principal_principio_encajonada
 
-point 178.0 -696.0 station -subtype fixed -name 3@hilo_principal
+point 178.0 -696.0 station -subtype fixed -name 3@hilo_principal_principio_encajonada
 
-point 132.0 -957.0 station -subtype fixed -name 2@hilo_principal
+point 132.0 -957.0 station -subtype fixed -name 2@hilo_principal_principio_encajonada
 
-point 169.0 -1060.0 station -subtype fixed -name 1@hilo_principal
+point 169.0 -1060.0 station -subtype fixed -name 1@hilo_principal_principio_encajonada
 
-point 216.0 -1316.0 station -subtype fixed -name 0@hilo_principal
+point 216.0 -1316.0 station -subtype fixed -name 0@hilo_principal_principio_encajonada
 
 endscrap
 
