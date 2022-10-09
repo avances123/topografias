@@ -90,10 +90,10 @@ survey stress  -title "Primeros metros de hilo cda"
 
 
 
-  # input cova.th2
-  # map mapa -projection plan
-  #   scrap1
-  # endmap
+  input cova.th2
+  map mapa -projection plan
+    scrap1
+  endmap
 
 
 endsurvey

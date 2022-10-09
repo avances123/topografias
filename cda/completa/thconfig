@@ -41,6 +41,7 @@ encoding  utf-8
  export model -fmt loch
  #export map -layout-debug station-names
 export map -layout todo -projection plan  -o cave_m.pdf
+export atlas -layout todo   -o cave_a.pdf
  #export map -projection plan  -o cave_m.pdf
  #export atlas -projection plan -o cave_a.pdf
  #export model -fmt kml -output cova_dels_arquets.kml

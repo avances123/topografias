@@ -10,6 +10,6 @@ survey CDA  -title "Cueva del agua: primeros 150m"
   equate 0@caverna_gemelas.caverna 0@gemelas1.gemelas
 
 
-  # join scrap1@caverna scrap1@gemelas
+  join scrap1@caverna scrap1@gemelas
 
 endsurvey

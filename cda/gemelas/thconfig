@@ -3,26 +3,26 @@ encoding  utf-8
  source cova.th
  
  layout todo
- symbol-show group centerline
+#symbol-show line survey
  legend on
- debug on
+ #debug on
 
  map-header -40 100 nw
 
 
+code metapost
 
- code metapost
- 
-   def l_survey_cave (expr P) =
-     T:=identity;
-     pair zz[];
-     pickup PenC;
-     for t = 0 upto length P - 1:
-       zz1 := point t of P;
-       zz2 := point t+1 of P;
-       draw zz1 -- zz2 withcolor (0.8,0.0,0.0);
-     endfor;
-   enddef;
+  def l_survey_cave (expr P) =
+    T:=identity;
+    pair zz[];
+    pickup PenC;
+    for t = 0 upto length P - 1:
+      zz1 := point t of P;
+      zz2 := point t+1 of P;
+      draw zz1 -- zz2 withcolor (0.8,0.0,0.0);
+    endfor;
+  enddef;
+
  
  
  endlayout

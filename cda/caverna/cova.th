@@ -1,6 +1,8 @@
 encoding  utf-8
 survey caverna  -title "Cueva del agua: caverna" 
 
+
+
   survey hilo_caverna -entrance 7
     centerline
       	team "Fabio Rueda"
@@ -8,6 +10,7 @@ survey caverna  -title "Cueva del agua: caverna"
 		calibrate depth 0 -1 #Pongo la profundidad en negativo
 		calibrate tape 0 1 # Nudos cada 1 m
 		cs EPSG:25831
+		flags splay
 		data diving station depth newline  tape backcompass
 		0 13 #nudo con el hilo pral
 			1.5 80
@@ -27,6 +30,24 @@ survey caverna  -title "Cueva del agua: caverna"
     endcenterline
   endsurvey
 
+survey hilo_principal_principio_encajonada 
+	# copiado del fichero stress, para pintar el inicio del hilo principal en este dibujo tambien.
+    centerline 
+      team "Fabio Rueda"
+      date 2022.09.30
+      calibrate depth 0 -1 #Pongo la profundidad en negativo
+      calibrate tape 0 1 # Nudos cada 1 m
+      cs EPSG:25831
+      data diving station depth newline  tape backcompass
+      0 11
+        9.3 170
+      1 12.3
+        4.1 160
+      2 11.2
+    endcenterline
+  endsurvey
+
+
 
 survey caverna_gemelas
     centerline
@@ -35,6 +56,7 @@ survey caverna_gemelas
 		calibrate depth 0 -1 #Pongo la profundidad en negativo
 		calibrate tape 0 1 # Nudos cada 1 m
 		cs EPSG:25831
+		flags splay
 		data diving station depth newline  tape backcompass
 		0 10.8  # nudo gemelas
 			18.2 165
@@ -52,9 +74,14 @@ survey caverna_gemelas
 		calibrate depth 0 -1 #Pongo la profundidad en negativo
 		calibrate tape 0 1 # Nudos cada 1 m
 		cs EPSG:25831
+		group
+		flags splay
 		data diving station depth newline  tape compass
 		2 12.5 # rem 5
 			15 250
+		3 13.2 #nudo galeria
+		endgroup
+		data diving station depth newline  tape compass
 		3 13.2 #nudo galeria
 			3 315
 		4 14.1 
@@ -64,6 +91,12 @@ survey caverna_gemelas
 		6 13.5
 			3 10
 		7 14.5
+			7 40
+		8 13
+			6 45
+		9 12
+			5 50
+		10 11
     endcenterline
   endsurvey
 
@@ -79,6 +112,11 @@ survey caverna_gemelas
 		-1 9 
 			10 85
 		0 8.6 # nudo hacia la galeria del mar
+
+		group
+		flags splay
+		data diving station depth newline  tape compass
+		0 8.6 # nudo hacia la galeria del mar
 			13 80
 		1 8
 			19.5 50
@@ -87,6 +125,7 @@ survey caverna_gemelas
 		3 9.4
 			9	180
 		4 10.6 # estribo
+		endgroup
     endcenterline
   endsurvey
 
@@ -97,6 +136,8 @@ survey caverna_gemelas
 		calibrate depth 0 -1 #Pongo la profundidad en negativo
 		calibrate tape 0 1 # Nudos cada 1 m
 		cs EPSG:25831
+		group
+		flags splay
 		data diving station depth newline  tape compass
 		0 10.6 # estribo
 			9 210
@@ -104,6 +145,9 @@ survey caverna_gemelas
 			6.1 235
 		2 9.2
 			8 310
+		3 6.8
+		endgroup
+		data diving station depth newline  tape compass
 		3 6.8
 			7.6 280
 		4 6.7
@@ -121,9 +165,14 @@ survey caverna_gemelas
 		calibrate depth 0 -1 #Pongo la profundidad en negativo
 		calibrate tape 0 1 # Nudos cada 1 m
 		cs EPSG:25831
+		group
+		flags splay
 		data diving station depth newline  tape compass
 		0 12.6 # nudo al hilo pra
 			4 40
+		1 13.3 # nudo restriccon1
+		endgroup
+		data diving station depth newline  tape compass
 		1 13.3 # nudo restriccon1
 			7.5 60
 		2 14.7
@@ -138,6 +187,7 @@ survey caverna_gemelas
 		calibrate depth 0 -1 #Pongo la profundidad en negativo
 		calibrate tape 0 1 # Nudos cada 1 m
 		cs EPSG:25831
+		flags splay
 		data diving station depth newline  tape compass
 		0 11 # nudo a gemelas
 			7.1 260
@@ -158,9 +208,14 @@ survey caverna_gemelas
 		calibrate depth 0 -1 #Pongo la profundidad en negativo
 		calibrate tape 0 1 # Nudos cada 1 m
 		cs EPSG:25831
+		group
+		flags splay
 		data diving station depth newline  tape compass
 		0 13.6 # nudo a restriccion1
 			7.5 155
+		1 12.8
+		endgroup
+		data diving station depth newline  tape compass
 		1 12.8
 			3.2 70
 		2 12.6 # T con restriccion 3
@@ -195,11 +250,14 @@ survey restriccion3
   equate 3@a_gemelas2 7@hilo_caverna
   equate 0@a_gemelas2 0@caverna_gemelas
   equate 0@restriccion2 1@restriccion1
+  equate 0@hilo_caverna 0@hilo_principal_principio_encajonada
 
-#  input cova.th2
-#   map mapa -projection plan
-#     scrap1
-#   endmap
+
+
+ input cova.th2
+  map mapa -projection plan
+    scrap1
+  endmap
 	  
 
 endsurvey
