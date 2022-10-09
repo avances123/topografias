@@ -11,5 +11,6 @@ survey CDA  -title "Cueva del agua: primeros 150m"
 
 
   join scrap1@caverna scrap1@gemelas
+  join scrap1@caverna scrap1@stress
 
 endsurvey

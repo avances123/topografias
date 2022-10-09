@@ -90,10 +90,6 @@ point 674.0 -729.0 station -name 6@hilo_caverna
 
 point 740.0 -530.0 station -name 5@hilo_caverna -subtype temporary
 
-point 718.0 -42.0 station -name 2@hilo_principal_principio_encajonada -subtype fixed
-
-point 735.0 -88.0 station -name 1@hilo_principal_principio_encajonada -subtype fixed
-
 point 923.0 -309.0 station -name 1@restriccion3 -subtype fixed
 
 point 1018.0 -141.0 station -name 3@restriccion2 -subtype fixed
@@ -159,11 +155,8 @@ point 738.0 -203.0 station -name 1@hilo_caverna
 point 754.0 -200.0 station -name 0@hilo_caverna  -subtype fixed
 
 line wall
-  740.0 11.0
-  737.0 -30.0
-  751.0 -77.0
-  751.0 -77.0 750.0 -85.0 753.0 -92.0
-  756.0 -99.0 758.0 -106.0 765.0 -106.0
+  755.0 -88.0
+  758.0 -95.0 758.0 -106.0 765.0 -106.0
   772.0 -106.0 816.0 -99.0 816.0 -99.0
   smooth off
   816.0 -99.0 867.0 -88.0 880.0 -85.0
@@ -267,12 +260,8 @@ line wall
   690.0 -245.0 701.0 -243.0 709.0 -230.0
   717.0 -217.0 706.0 -206.0 707.0 -201.0
   708.0 -196.0 712.0 -178.0 712.0 -174.0
-  712.0 -170.0 698.0 -101.0 698.0 -101.0
+  712.0 -170.0 708.0 -97.0 708.0 -97.0
   smooth off
-  700.0 -73.0
-  700.0 -40.0
-  706.0 -2.0
-  711.0 -0.0
 endline
 
 line wall -close on

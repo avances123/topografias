@@ -1,39 +1,164 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -128 -1471 1074 128
+##XTHERION## xth_me_area_adjust -132.0 -1401 853 141.0
 ##XTHERION## xth_me_area_zoom_to 100
-##XTHERION## xth_me_image_insert {0 1 1.0} {0 {}} fondo.png 0 {}
+##XTHERION## xth_me_image_insert {0.0 1 1.0} {0.0 {}} fondo1.png 0 {}
 
 
 
-scrap scrap1 -scale [0 0 920.0 -10.0 0.0 0.0 40.64 0.0 m]
+scrap scrap1 -scale [0 0 690.0 -2.0 0.0 0.0 40.64 0.0 m]
 
-point 888.0 -687.0 station -subtype fixed -name 6@stress
+point 607.0 -773.0 station -name 6@stress -subtype fixed
 
-point 723.0 -688.0 station -subtype fixed -name 5@stress
+point 495.0 -774.0 station -name 5@stress -subtype fixed
 
-point 655.0 -686.0 station -subtype fixed -name 4@stress
+point 449.0 -773.0 station -name 4@stress -subtype fixed
 
-point 528.0 -686.0 station -subtype fixed -name 3@stress
+point 363.0 -771.0 station -name 3@stress -subtype fixed
 
-point 376.0 -666.0 station -subtype fixed -name 2@stress
+point 258.0 -759.0 station -name 2@stress -subtype fixed
 
-point 291.0 -697.0 station -subtype fixed -name 1@stress
+point 202.0 -778.0 station -name 1@stress -subtype fixed
 
-point 58.0 -51.0 station -subtype fixed -name 7@hilo_principal_principio_encajonada
+point 662.0 -40.0 station -name 5@encajonada -subtype fixed
 
-point 80.0 -193.0 station -subtype fixed -name 6@hilo_principal_principio_encajonada
+point 557.0 -50.0 station -name 4@encajonada -subtype fixed
 
-point 125.0 -437.0 station -subtype fixed -name 5@hilo_principal_principio_encajonada
+point 435.0 -117.0 station -name 3@encajonada -subtype fixed
 
-point 234.0 -648.0 station -subtype fixed -name 4@hilo_principal_principio_encajonada
+point 343.0 -184.0 station -name 2@encajonada -subtype fixed
 
-point 178.0 -696.0 station -subtype fixed -name 3@hilo_principal_principio_encajonada
+point 68.0 -310.0 station -name 1@encajonada -subtype fixed
 
-point 132.0 -957.0 station -subtype fixed -name 2@hilo_principal_principio_encajonada
+point 46.0 -342.0 station -name 7@hilo_principal_principio_encajonada -subtype fixed
 
-point 169.0 -1060.0 station -subtype fixed -name 1@hilo_principal_principio_encajonada
+point 60.0 -432.0 station -name 6@hilo_principal_principio_encajonada -subtype fixed
 
-point 216.0 -1316.0 station -subtype fixed -name 0@hilo_principal_principio_encajonada
+point 90.0 -602.0 station -name 5@hilo_principal_principio_encajonada -subtype fixed
+
+point 165.0 -743.0 station -name 4@hilo_principal_principio_encajonada -subtype fixed
+
+point 125.0 -777.0 station -name 3@hilo_principal_principio_encajonada -subtype fixed
+
+point 95.0 -955.0 station -name 2@hilo_principal_principio_encajonada -subtype fixed
+
+point 121.0 -1025.0 station -name 1@hilo_principal_principio_encajonada -subtype fixed
+
+point 151.0 -1199.0 station -name 0@hilo_principal_principio_encajonada -subtype fixed
+
+line wall
+  628.0 -703.0
+  628.0 -703.0 604.0 -706.0 591.0 -708.0
+  578.0 -710.0 569.0 -709.0 560.0 -709.0
+  551.0 -709.0 541.0 -708.0 529.0 -701.0
+  517.0 -694.0 490.0 -681.0 485.0 -678.0
+  480.0 -675.0 450.0 -668.0 450.0 -668.0
+  smooth off
+  450.0 -668.0 450.0 -662.0 433.0 -670.0
+  416.0 -678.0 387.0 -689.0 376.0 -691.0
+  365.0 -693.0 339.0 -682.0 339.0 -682.0
+  smooth off
+  339.0 -682.0 325.0 -672.0 302.0 -683.0
+  279.0 -694.0 272.0 -696.0 263.0 -701.0
+  254.0 -706.0 228.0 -722.0 228.0 -722.0
+  smooth off
+  202.0 -715.0
+  202.0 -715.0 164.0 -670.0 163.0 -667.0
+  162.0 -664.0 138.0 -626.0 138.0 -626.0
+  smooth off
+  118.0 -604.0
+  118.0 -604.0 95.0 -589.0 94.0 -575.0
+  93.0 -561.0 91.0 -497.0 90.0 -492.0
+  89.0 -487.0 78.0 -444.0 77.0 -441.0
+  76.0 -438.0 63.0 -383.0 63.0 -383.0
+  smooth off
+  60.0 -355.0
+  60.0 -355.0 59.0 -351.0 60.0 -344.0
+  61.0 -337.0 75.0 -324.0 75.0 -324.0
+  smooth off
+  116.0 -308.0
+  116.0 -308.0 172.0 -314.0 180.0 -309.0
+  188.0 -304.0 182.0 -300.0 239.0 -282.0
+  296.0 -264.0 287.0 -266.0 308.0 -261.0
+  329.0 -256.0 327.0 -263.0 366.0 -249.0
+  405.0 -235.0 430.0 -222.0 439.0 -216.0
+  448.0 -210.0 501.0 -171.0 521.0 -161.0
+  541.0 -151.0 568.0 -131.0 576.0 -128.0
+  584.0 -125.0 659.0 -99.0 659.0 -99.0
+  smooth off
+  683.0 -102.0
+endline
+
+line wall
+  161.0 -1022.0
+  161.0 -1022.0 146.0 -937.0 147.0 -927.0
+  148.0 -917.0 162.0 -879.0 162.0 -875.0
+  162.0 -871.0 165.0 -849.0 165.0 -849.0
+  smooth off
+  150.0 -816.0
+  150.0 -816.0 151.0 -809.0 157.0 -808.0
+  163.0 -807.0 167.0 -787.0 167.0 -787.0
+  smooth off
+  167.0 -787.0 187.0 -789.0 194.0 -788.0
+  201.0 -787.0 224.0 -775.0 233.0 -775.0
+  242.0 -775.0 260.0 -777.0 267.0 -775.0
+  274.0 -773.0 291.0 -770.0 297.0 -772.0
+  303.0 -774.0 302.0 -780.0 320.0 -783.0
+  338.0 -786.0 379.0 -793.0 379.0 -793.0
+  smooth off
+  379.0 -793.0 399.0 -790.0 413.0 -789.0
+  427.0 -788.0 458.0 -787.0 464.0 -787.0
+  470.0 -787.0 503.0 -790.0 512.0 -791.0
+  521.0 -792.0 588.0 -792.0 596.0 -790.0
+  604.0 -788.0 628.0 -795.0 628.0 -795.0
+  smooth off
+endline
+
+point 88.0 -617.0 nameplate
+
+line wall
+  83.0 -1043.0
+  82.0 -1032.0 78.0 -1013.0 77.0 -1008.0
+  76.0 -1003.0 66.0 -977.0 64.0 -973.0
+  62.0 -969.0 62.0 -978.0 61.0 -950.0
+  60.0 -922.0 58.0 -928.0 61.0 -915.0
+  64.0 -902.0 69.0 -855.0 69.0 -850.0
+  69.0 -845.0 70.0 -807.0 70.0 -807.0
+  smooth off
+  70.0 -807.0 67.0 -782.0 69.0 -778.0
+  71.0 -774.0 75.0 -759.0 78.0 -751.0
+  81.0 -743.0 85.0 -723.0 85.0 -723.0
+  smooth off
+  86.0 -704.0
+  86.0 -704.0 85.0 -672.0 83.0 -669.0
+  81.0 -666.0 69.0 -649.0 68.0 -643.0
+  67.0 -637.0 64.0 -616.0 64.0 -616.0
+  smooth off
+  64.0 -616.0 63.0 -619.0 54.0 -605.0
+  45.0 -591.0 48.0 -592.0 40.0 -582.0
+  32.0 -572.0 29.0 -567.0 28.0 -550.0
+  27.0 -533.0 25.0 -519.0 25.0 -501.0
+  25.0 -483.0 28.0 -431.0 25.0 -422.0
+  22.0 -413.0 18.0 -398.0 18.0 -387.0
+  18.0 -376.0 23.0 -353.0 24.0 -348.0
+  25.0 -343.0 33.0 -337.0 33.0 -337.0
+  smooth off
+  60.0 -306.0
+  72.0 -289.0
+  72.0 -289.0 95.0 -267.0 100.0 -266.0
+  105.0 -265.0 148.0 -242.0 151.0 -238.0
+  154.0 -234.0 194.0 -206.0 197.0 -202.0
+  200.0 -198.0 203.0 -192.0 224.0 -185.0
+  245.0 -178.0 270.0 -168.0 286.0 -166.0
+  302.0 -164.0 315.0 -164.0 328.0 -158.0
+  341.0 -152.0 365.0 -131.0 374.0 -126.0
+  383.0 -121.0 401.0 -108.0 415.0 -100.0
+  429.0 -92.0 442.0 -54.0 446.0 -48.0
+  450.0 -42.0 508.0 -20.0 508.0 -20.0
+  smooth off
+  508.0 -20.0 569.0 -8.0 572.0 -6.0
+  575.0 -4.0 614.0 5.0 614.0 5.0
+  smooth off
+endline
 
 endscrap
 

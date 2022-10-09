@@ -18,7 +18,13 @@ survey stress  -title "Primeros metros de hilo cda"
       2 11.2
         9.5 190
       3 11.6
+      group
+      flags splay
+      data diving station depth newline  tape backcompass
+      3 11.6
         2.8 230
+      4 12.1
+      endgroup
       4 12.1
         8.8 152
       5 9.7
@@ -90,10 +96,10 @@ survey stress  -title "Primeros metros de hilo cda"
 
 
 
-  input cova.th2
-  map mapa -projection plan
-    scrap1
-  endmap
+    input cova.th2
+    map mapa -projection plan
+      scrap1
+    endmap
 
 
 endsurvey

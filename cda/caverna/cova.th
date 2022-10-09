@@ -40,13 +40,10 @@ survey hilo_principal_principio_encajonada
       calibrate tape 0 1 # Nudos cada 1 m
       cs EPSG:25831
       data diving station depth newline  tape backcompass
-	  -1 9
+	  -1 9 # cartel inventado
 	  	5 170
-      0 11
+      0 11 # nudo al hilo 
         9.3 170
-      1 12.3
-        4.1 160
-      2 11.2
     endcenterline
   endsurvey
 
