@@ -8,10 +8,10 @@ encoding  utf-8
 scrap scrap1 -scale [-128 -1125 1253 -1125 0.0 0.0 35.0774 0.0 m]
 
 line wall
-  969.0 -325.0
-  963.0 -319.0 914.0 -237.0 914.0 -237.0
+  942.0 -302.0
+  936.0 -296.0 898.0 -235.0 898.0 -235.0
   smooth off
-  914.0 -237.0 928.0 -213.0 949.0 -203.0
+  898.0 -235.0 928.0 -213.0 949.0 -203.0
   970.0 -193.0 956.0 -201.0 984.0 -181.0
   1012.0 -161.0 1025.0 -153.0 1029.0 -152.0
   1033.0 -151.0 1044.0 -145.0 1050.0 -139.0
@@ -30,88 +30,99 @@ line wall
   smooth off
 endline
 
-line wall
-  504.0 -645.0
-  521.0 -665.0 523.0 -666.0 522.0 -681.0
-  521.0 -696.0 523.0 -719.0 523.0 -719.0
+point 460.0 -825.0 archeo-material
+
+point 765.0 -278.0 label -text "Cartel informativo"
+
+point 763.0 -252.0 station -subtype fixed -name -1@hilo_principal_principio_encajonada
+
+line pit -close on -reverse on
+  333.0 -697.0
+  333.0 -697.0 347.0 -687.0 364.0 -686.0
+  381.0 -685.0 381.0 -687.0 391.0 -685.0
+  401.0 -683.0 421.0 -678.0 421.0 -678.0
   smooth off
-  522.0 -738.0
-  521.0 -749.0
-  517.0 -775.0
-  517.0 -775.0 507.0 -779.0 503.0 -780.0
-  499.0 -781.0 491.0 -768.0 491.0 -768.0
+  421.0 -678.0 435.0 -681.0 446.0 -682.0
+  457.0 -683.0 451.0 -676.0 477.0 -672.0
+  503.0 -668.0 498.0 -674.0 498.0 -674.0
   smooth off
-  487.0 -751.0
-  480.0 -734.0
-  477.0 -713.0
-  467.0 -707.0
-  456.0 -707.0
-  456.0 -707.0 449.0 -713.0 445.0 -717.0
-  441.0 -721.0 433.0 -725.0 433.0 -725.0
+  498.0 -674.0 512.0 -679.0 514.0 -682.0
+  516.0 -685.0 519.0 -702.0 518.0 -705.0
+  517.0 -708.0 522.0 -742.0 522.0 -742.0
   smooth off
-  415.0 -735.0
-  401.0 -738.0
-  379.0 -752.0
-  361.0 -758.0
-  340.0 -761.0
-  316.0 -759.0
-  331.0 -745.0
-  369.0 -726.0
-  378.0 -723.0
-  378.0 -723.0 381.0 -718.0 388.0 -715.0
-  395.0 -712.0 411.0 -700.0 417.0 -698.0
-  423.0 -696.0 424.0 -694.0 429.0 -688.0
-  434.0 -682.0 440.0 -680.0 445.0 -675.0
-  450.0 -670.0 451.0 -668.0 458.0 -662.0
-  465.0 -656.0 471.0 -651.0 475.0 -650.0
-  479.0 -649.0 477.9 -639.48 486.0 -641.0
-  502.0 -644.0 507.0 -650.0 507.0 -650.0
+  522.0 -742.0 521.0 -763.0 523.0 -769.0
+  525.0 -775.0 527.0 -791.0 526.0 -795.0
+  525.0 -799.0 522.0 -809.0 522.0 -809.0
+  smooth off
+  526.0 -820.0
+  526.0 -820.0 516.0 -826.0 515.0 -823.0
+  514.0 -820.0 507.0 -802.0 507.0 -802.0
+  smooth off
+  505.0 -795.0
+  505.0 -795.0 503.0 -780.0 502.0 -776.0
+  501.0 -772.0 497.0 -759.0 497.0 -759.0
+  smooth off
+  497.0 -759.0 498.0 -741.0 494.0 -737.0
+  490.0 -733.0 488.0 -718.0 488.0 -718.0
+  smooth off
+  475.0 -709.0
+  458.0 -710.0
+  426.0 -707.0
+  410.0 -708.0
+  410.0 -708.0 395.0 -706.0 388.0 -707.0
+  381.0 -708.0 364.0 -707.0 364.0 -707.0
+  smooth off
+  350.0 -710.0
+  350.0 -710.0 346.0 -709.0 342.0 -707.0
+  338.0 -705.0 333.0 -697.0 333.0 -697.0
   smooth off
 endline
 
 point 765.0 -546.0 station -name 1@caverna_gemelas
 
-point 838.0 -763.0 station -name 0@caverna_gemelas
+point 838.0 -763.0 station -name 0@caverna_gemelas -subtype fixed
 
-point 569.0 -741.0 station -name 7@hilo_caverna
+point 564.0 -736.0 blocks
+
+point 569.0 -741.0 station -name 7@hilo_caverna -visibility on
 
 point 674.0 -729.0 station -name 6@hilo_caverna
 
-point 740.0 -530.0 station -name 5@hilo_caverna
+point 740.0 -530.0 station -name 5@hilo_caverna -subtype temporary
 
-point 718.0 -42.0 station -name 2@hilo_principal_principio_encajonada
+point 718.0 -42.0 station -name 2@hilo_principal_principio_encajonada -subtype fixed
 
-point 735.0 -88.0 station -name 1@hilo_principal_principio_encajonada
+point 735.0 -88.0 station -name 1@hilo_principal_principio_encajonada -subtype fixed
 
-point 923.0 -309.0 station -name 1@restriccion3
+point 923.0 -309.0 station -name 1@restriccion3 -subtype fixed
 
-point 1018.0 -141.0 station -name 3@restriccion2
+point 1018.0 -141.0 station -name 3@restriccion2 -subtype fixed
 
-point 861.0 -232.0 station -name 2@restriccion2
+point 861.0 -232.0 station -name 2@restriccion2 -subtype fixed
 
-point 825.0 -244.0 station -name 1@restriccion2
+point 825.0 -244.0 station -name 1@restriccion2 -subtype fixed
 
-point 863.0 -116.0 station -name 2@restriccion1
+point 863.0 -116.0 station -name 2@restriccion1 -subtype fixed
 
-point 787.0 -163.0 station -name 1@restriccion1
+point 787.0 -163.0 station -name 1@restriccion1 -subtype fixed
 
 point 666.0 -743.0 station -name 2@a_gemelas2
 
 point 756.0 -776.0 station -name 1@a_gemelas2
 
-point 125.0 -832.0 station -name 6@moto
+point 125.0 -832.0 station -name 6@moto -subtype fixed
 
-point 178.0 -840.0 station -name 5@moto
+point 178.0 -840.0 station -name 5@moto -subtype fixed
 
-point 295.0 -797.0 station -name 4@moto
+point 295.0 -797.0 station -name 4@moto -subtype fixed
 
-point 385.0 -815.0 station -name 3@moto
+point 385.0 -815.0 station -name 3@moto -subtype fixed
 
 point 459.0 -874.0 station -name 2@moto
 
-point 513.0 -839.0 station -name 1@moto
+point 515.0 -831.0 station -name 1@moto
 
-point 39.0 -762.0 station -name -1@caverna_mar
+point 39.0 -762.0 station -name -1@caverna_mar -subtype fixed
 
 point 569.0 -630.0 station -name 3@caverna_mar
 
@@ -119,23 +130,23 @@ point 499.0 -572.0 station -name 2@caverna_mar
 
 point 319.0 -726.0 station -name 1@caverna_mar
 
-point 160.0 -752.0 station -name 0@caverna_mar
+point 160.0 -752.0 station -name 0@caverna_mar -subtype fixed
 
-point 727.0 -245.0 station -name 10@caverna_galeria_izquierda
+point 727.0 -245.0 station -name 10@caverna_galeria_izquierda -subtype fixed
 
-point 684.0 -279.0 station -name 9@caverna_galeria_izquierda
+point 684.0 -279.0 station -name 9@caverna_galeria_izquierda -subtype fixed
 
-point 624.0 -323.0 station -name 8@caverna_galeria_izquierda
+point 624.0 -323.0 station -name 8@caverna_galeria_izquierda -subtype fixed
 
-point 572.0 -394.0 station -name 7@caverna_galeria_izquierda
+point 572.0 -394.0 station -name 7@caverna_galeria_izquierda -subtype fixed
 
-point 567.0 -425.0 station -name 6@caverna_galeria_izquierda
+point 567.0 -425.0 station -name 6@caverna_galeria_izquierda -subtype fixed
 
-point 564.0 -466.0 station -name 5@caverna_galeria_izquierda
+point 564.0 -466.0 station -name 5@caverna_galeria_izquierda -subtype fixed
 
-point 565.0 -505.0 station -name 4@caverna_galeria_izquierda
+point 565.0 -505.0 station -name 4@caverna_galeria_izquierda -subtype fixed
 
-point 592.0 -529.0 station -name 3@caverna_galeria_izquierda
+point 592.0 -529.0 station -name 3@caverna_galeria_izquierda -subtype fixed
 
 point 763.0 -466.0 station -name 4@hilo_caverna
 
@@ -145,7 +156,7 @@ point 788.0 -314.0 station -name 2@hilo_caverna
 
 point 738.0 -203.0 station -name 1@hilo_caverna
 
-point 754.0 -200.0 station -name 0@hilo_caverna
+point 754.0 -200.0 station -name 0@hilo_caverna  -subtype fixed
 
 line wall
   740.0 11.0
@@ -293,6 +304,38 @@ line wall -close on
   smooth off
   610.0 -475.0
 endline
+
+point 938.0 -636.0 blocks -scale xl
+
+point 855.0 -623.0 blocks
+
+point 899.0 -672.0 blocks -scale xl
+
+point 877.0 -652.0 blocks -scale l
+
+point 764.0 -266.0 nameplate
+
+line contour -reverse on
+  527.0 -466.0
+  527.0 -466.0 535.0 -474.0 541.0 -475.0
+  547.0 -476.0 558.0 -484.0 569.0 -477.0
+  580.0 -470.0 597.0 -460.0 597.0 -460.0
+  smooth off
+endline
+
+line contour -reverse on
+  534.0 -439.0
+  534.0 -439.0 540.0 -446.0 545.0 -446.0
+  550.0 -446.0 567.0 -446.0 572.0 -445.0
+  577.0 -444.0 595.0 -438.0 595.0 -438.0
+  smooth off
+endline
+
+point 461.0 -739.0 entrance -orientation 45.5 -scale xl
+
+point 471.0 -840.0 label -text "La Moto"
+
+point 567.75 -751.5 label -text "Roca Estribo"
 
 endscrap
 

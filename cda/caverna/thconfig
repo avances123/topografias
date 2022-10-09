@@ -8,6 +8,7 @@ encoding  utf-8
   statistics explo-length on
   #rotate 30 #on
   symbol-show group centerline
+
   legend on
   debug off
   transparency on
