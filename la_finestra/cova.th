@@ -1,0 +1,58 @@
+encoding  utf-8
+survey finestra  -title "La finestra"
+	
+
+		survey finestra1 -entrance 0
+			centerline
+				team "Fabio Rueda"
+				date 2022.11.06
+				calibrate depth 0 -1 #Pongo la profundidad en negativo
+				calibrate tape 0 1 # Nudos cada 1 m
+				cs EPSG:25831
+				data diving station depth newline tape compass 
+				0 9
+					8 185
+				1 7.3
+					5.4 210
+				2 5.1
+					4 150
+				3 6.6
+					1.5 150
+				4 6.7
+					2.6 180
+				5 7
+					7 310
+				6 3.7
+					5 235
+				7 1.5
+			endcenterline
+		endsurvey
+
+
+		survey finestra2
+			centerline
+				team "Fabio Rueda"
+				date 2022.11.06
+				calibrate depth 0 -1 #Pongo la profundidad en negativo
+				calibrate tape 0 1 # Nudos cada 1 m
+				cs EPSG:25831
+				data diving station depth newline tape compass 
+				0 3.2
+					5 95
+				1 4.5
+					2 150
+				2 6.5
+			endcenterline
+		endsurvey
+
+		equate 6@finestra1 0@finestra2
+		equate 3@finestra1 2@finestra2
+
+
+	# input cova.th2
+	# map mapa -projection plan
+	# 	scrap1
+	# endmap
+	
+endsurvey
+

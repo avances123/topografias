@@ -10,6 +10,7 @@ survey mirador  -title "El Mirador"
 				calibrate depth 0 -1 #Pongo la profundidad en negativo
 				calibrate tape 0 1 # Nudos cada 1 m
 				cs EPSG:25831
+				fix 0 514039.61718191084219143 4662519.08965292666107416 -6
 				data diving station depth newline  compass tape
 				0 6
 					140 5.7
