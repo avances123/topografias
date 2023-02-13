@@ -72,17 +72,14 @@ survey gemelas  -title "Las Gemelas"
       calibrate depth 0 -1 #Pongo la profundidad en negativo
       calibrate tape 0 1 # Nudos cada 1 m
       cs EPSG:25831
-	  group # salto a la galeria, no cuenta en las stats
-			flags splay
 		data diving station depth newline  tape compass
+    flags splay		
 		0 8
 			9 320
-		1 5.8
-	  endgroup
-	  data diving station depth newline  tape compass
+    flags not splay		
 	  1 5.8
         5 250
-      2 7
+    2 7
     endcenterline  
   endsurvey
 

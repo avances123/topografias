@@ -13,8 +13,12 @@ encoding  utf-8
   debug off
   transparency on
   opacity 20
-  color map-fg [00 90 90]
-  #symbol-hide group centerline
+  color map-fg [00 70 90]
+  symbol-hide point blocks
+  symbol-hide line contour
+  symbol-hide line floor-step
+  symbol-hide area clay
+
   #symbol-show point station:temporary
 
 
@@ -35,7 +39,7 @@ encoding  utf-8
  endlayout
  
 #select mapa@gemelas.CDA
-#select mapa@caverna.CDA
+select mapa@caverna.CDA
 #select mapa@stress.CDA
  
  
