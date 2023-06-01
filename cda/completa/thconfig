@@ -38,12 +38,14 @@ encoding  utf-8
  
  endlayout
  
-#select mapa@gemelas.CDA
+select mapa@gemelas.CDA
 select mapa@caverna.CDA
-#select mapa@stress.CDA
+select mapa@stress.CDA
  
  
  export model -fmt loch
+ export model -fmt esri -output cave.esri
+
  #export map -layout-debug station-names
 export map -layout todo -projection plan  -o cave_m.pdf
 export atlas -layout todo   -o cave_a.pdf
