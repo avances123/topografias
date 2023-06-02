@@ -242,7 +242,7 @@ line wall
   smooth off
 endline
 
-line wall -close on
+line wall -id dfsffwef -close on -outline in
   610.0 -475.0
   610.0 -475.0 624.0 -458.0 628.0 -454.0
   632.0 -450.0 642.0 -443.0 644.0 -438.0

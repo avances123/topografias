@@ -29,7 +29,7 @@ code metapost
  
  
  
- 
+ export model -fmt esri -output cave.esri
  export model -fmt loch
  export map -layout todo -projection plan  -o cave_m.pdf
  export map -layout todo -projection extended  -o cave_ex.pdf
