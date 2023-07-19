@@ -1,0 +1,45 @@
+encoding  utf-8
+survey punta_grossa  -title "Punta Grossa"
+	
+
+		survey punta_grossa1 -entrance 0
+			centerline
+				team "Fabio Rueda"
+				date 2023.07.19
+				calibrate depth 0 -1 #Pongo la profundidad en negativo
+				calibrate tape 0 1 # Nudos cada 1 m
+				cs EPSG:25831
+				data diving station depth newline tape compass 
+				0 12.5
+					6.3 120
+				1 17.3
+					2.7 120
+				2 17.3
+					3 125
+				3 16.9
+					4.5 90
+				4 16.7
+					3.2 40
+				5 15.2
+					4.4 160
+				6 18.1
+					3.6 30
+				7 18.4
+					1.8 335
+				8 18.4
+					9.9 270
+				9 18.4
+					2.3	200
+				10 17.3
+			endcenterline
+		endsurvey
+
+		equate 2@punta_grossa1 10@punta_grossa1
+
+	# input cova.th2
+	# map mapa -projection plan
+	# 	scrap1
+	# endmap
+	
+endsurvey
+
