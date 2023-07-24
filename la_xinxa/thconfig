@@ -7,7 +7,7 @@ encoding  utf-8
 # legend on
 
 # map-header -40 100 nw
- rotate 180 #on
+ rotate 100 #on
 
 
 
@@ -33,7 +33,7 @@ encoding  utf-8
  export model -fmt loch
  export map -layout todo -projection plan  -o cave_m.pdf
  export map -layout todo -projection extended  -o cave_ex.pdf
-export map -layout todo -projection [elevation 180]  -o cave_el.pdf
+export map -layout todo -projection [elevation 280]  -o cave_el.pdf
 
 
 
