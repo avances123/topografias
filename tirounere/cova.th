@@ -1,0 +1,67 @@
+encoding  utf-8
+survey la_xinxa  -title "Source de la tirounere"
+	
+
+		survey S1 -entrance 1
+			centerline
+				team "Fabio Rueda"
+				date 2023.09.24
+				calibrate depth 0 -1 #Pongo la profundidad en negativo
+				calibrate tape 0 1 # Nudos cada 1 m
+				cs EPSG:25831
+				data diving station depth newline tape compass 
+				1 5.7
+					15 265
+				2 10.9
+					4 235
+				3 12.2
+					11.5 275
+				4 5
+					6 290
+				5 7
+					2.5 190
+				6 7.5
+					5 210
+				7 6.8
+					6.7 210
+				8 6.7
+					12 210
+				9 1.4
+					4 180
+				10 2
+					9 165
+				11 5.4
+			endcenterline
+		endsurvey
+
+		survey S2
+			centerline
+				team "Fabio Rueda"
+				date 2023.09.24
+				calibrate depth 0 -1 #Pongo la profundidad en negativo
+				calibrate tape 0 1 # Nudos cada 1 m
+				cs EPSG:25831
+				data diving station depth newline tape compass 
+				0 6
+					15 260
+				1 7.6
+					6 280
+				2 4.6
+					4 245
+				3 4.5
+					4 160
+				4 6
+			endcenterline
+		endsurvey
+
+
+		equate 11@S1 0@S2
+
+
+	# input cova.th2
+	# map mapa -projection plan
+	# 	scrap1
+	# endmap
+	
+endsurvey
+
