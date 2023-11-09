@@ -33,7 +33,7 @@ code metapost
  export model -fmt loch
  export map -layout todo -projection plan  -o cave_m.pdf
  export map -layout todo -projection extended  -o cave_ex.pdf
-#export map -layout todo -projection [elevation 054]  -o cave_el.pdf
+ #export map -layout todo -projection [elevation 034]  -o cave_el.pdf
 
 
  #export atlas -projection plan -o cave_a.pdf

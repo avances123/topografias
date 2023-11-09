@@ -58,10 +58,10 @@ survey la_xinxa  -title "Source de la tirounere"
 		equate 11@S1 0@S2
 
 
-	# input cova.th2
-	# map mapa -projection plan
-	# 	scrap1
-	# endmap
+	input cova.th2
+	map mapa -projection plan
+		scrap1
+	endmap
 	
 endsurvey
 

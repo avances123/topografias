@@ -45,6 +45,33 @@ survey finestra  -title "La finestra"
 			endcenterline
 		endsurvey
 
+		# galeria del bombero
+		survey finestra3
+			centerline
+				team "Fabio Rueda"
+				date 2023.11.09
+				calibrate depth 0 -1 #Pongo la profundidad en negativo
+				calibrate tape 0 1 # Nudos cada 1 m
+				cs EPSG:25831
+				data diving station depth newline tape compass 
+				0 3 # 3m antes del puente de piedra
+					3.5 275
+				1 2.5 # Antes de subir a la burbuja negra
+					1.2 300
+				2 1.5 # Estalactita pre burbuja negra
+					4.5 210
+				3 4.6 # fraccionamiento bonito
+					3.8 310
+				4 3.3 # Galeria con burbuja a la derecha (TECHO)
+					3.1 320
+				5 3.9
+					3.3 310
+				6 2.5 # T de arriba equate
+
+			endcenterline
+		endsurvey
+
+
 		equate 6@finestra1 0@finestra2
 		equate 3@finestra1 2@finestra2
 
