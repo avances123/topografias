@@ -74,6 +74,7 @@ survey finestra  -title "La finestra"
 
 		equate 6@finestra1 0@finestra2
 		equate 3@finestra1 2@finestra2
+		equate 6@finestra3 6@finestra1
 
 
 	# input cova.th2
