@@ -1,0 +1,66 @@
+encoding  utf-8
+survey las_T  -title "De 100 a 200 metros" 
+  survey bucle 
+    centerline 
+      team "Fabio Rueda"
+      date 2023.12.02
+      calibrate depth 0 -1 #Pongo la profundidad en negativo
+      calibrate tape 0 1 # Nudos cada 1 m
+		  cs EPSG:25831
+      data diving station depth newline  tape compass
+      0 13.2 # poste de los 100m
+        5.8 85
+      1 13.1 # 
+        28.5  50
+      2 12.6 # PRIMERA T
+        7.5 60
+      3 12.3
+        3.3 50
+      4 12.1 # SALTO gap vertical
+        7.8 50
+      5 11.7 # SALTO a la izquierda hacia la cruz
+        11 50
+      6 11.5
+        10 25
+      7 11.6
+        3.4 350
+      8 11.7
+        2.5 325
+      9 11.5 # SALTO dch hacia 50º
+        5 310
+      10 11.1 # SALTO dch hacia una ventana
+        6.2 310
+      11 10.8 # SALTO a la izquierda ventana lamas
+        11.5 310
+      12 10.6 # SEGUNDA T
+        8.5 310
+      13 9.9 # SALTO hacia la derecha galeria peligrosa
+        20.5 255
+      14 11.3 # SALTO sin señalizar a la derecha otra galeria peligrosa
+        5.6 200
+      15 11.6 # SALTO a la encajonada
+        1 200
+      16 11.6
+        12.2 130
+      17 10.8
+        7.5 140
+      18 12.3 # SALTO hacia la izq hacia la cruz
+        10 165
+      19 13.7 # SALTO hacia la izq hacia la cruz
+        9 165
+      20 12.6 # PRIMERA T
+    endcenterline
+  endsurvey
+
+
+  equate 2@bucle 20@bucle
+
+
+
+  input cova.th2
+  map mapa -projection plan
+    scrap1
+  endmap
+
+
+endsurvey

@@ -1,9 +1,5 @@
 encoding  utf-8
 survey caverna  -title "Cueva del agua: caverna" 
-
-
-
-
   survey hilo_caverna -entrance 7
     centerline
       	team "Fabio Rueda"
@@ -11,7 +7,7 @@ survey caverna  -title "Cueva del agua: caverna"
 		calibrate depth 0 -1 #Pongo la profundidad en negativo
 		calibrate tape 0 1 # Nudos cada 1 m
 		cs EPSG:25831
-		fix 7 127330.278 4167199.633 15
+		#fix 7 127330.278 4167199.633 15
 		flags splay
 		data diving station depth newline  tape backcompass
 		0 13 #nudo con el hilo pral

@@ -7,7 +7,7 @@ survey gemelas  -title "Las Gemelas"
       date 2022.05.24
       calibrate depth 0 -1 #Pongo la profundidad en negativo
       calibrate tape 0 1 # Nudos cada 1 m
-      cs EPSG:4326
+		  cs EPSG:25831
       data diving station depth newline  tape backcompass
       0 11
         2.8 328
@@ -37,7 +37,7 @@ survey gemelas  -title "Las Gemelas"
       date 2022.05.24
       calibrate depth 0 -1 #Pongo la profundidad en negativo
       calibrate tape 0 1 # Nudos cada 1 m
-      cs EPSG:4326
+		  cs EPSG:25831
       data diving station depth newline  tape backcompass
       0 10.4
         13 320
@@ -52,7 +52,7 @@ survey gemelas  -title "Las Gemelas"
       date 2022.05.24
       calibrate depth 0 -1 #Pongo la profundidad en negativo
       calibrate tape 0 1 # Nudos cada 1 m
-      cs EPSG:4326
+		  cs EPSG:25831
       data diving station depth newline  tape backcompass
       9 8.7
         10.1 34
@@ -71,7 +71,7 @@ survey gemelas  -title "Las Gemelas"
       date 2022.08.13
       calibrate depth 0 -1 #Pongo la profundidad en negativo
       calibrate tape 0 1 # Nudos cada 1 m
-      cs EPSG:4326
+		  cs EPSG:25831
 		data diving station depth newline  tape compass
     flags splay		
 		0 8
@@ -89,7 +89,7 @@ survey gemelas  -title "Las Gemelas"
 		date 2022.08.13
 		calibrate depth 0 -1 #Pongo la profundidad en negativo
 		calibrate tape 0 1 # Nudos cada 1 m
-		cs EPSG:4326
+		cs EPSG:25831
 
 		group # salto a la galeria, no cuenta en las stats
 			flags splay
@@ -115,7 +115,7 @@ survey gemelas  -title "Las Gemelas"
       date 2022.08.13
       calibrate depth 0 -1 #Pongo la profundidad en negativo
       calibrate tape 0 1 # Nudos cada 1 m
-      cs EPSG:4326
+		  cs EPSG:25831
       data diving station depth newline  tape compass
       0 12.8
         11 60

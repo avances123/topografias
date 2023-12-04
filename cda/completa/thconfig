@@ -3,17 +3,20 @@ encoding  utf-8
  source cova.th
  
  layout todo
+  base-scale 1 500
   map-header 0 100 sw # pone el header arriba a la izquierda
   statistics topo-length on #on
   statistics explo-length on
   #rotate 30 #on
   symbol-show group centerline
-  symbol-hide point station:temporary
+  #symbol-hide point station:temporary
+  symbol-hide line wall
+  symbol-hide group text
   legend on
   debug off
   transparency on
   opacity 20
-  color map-fg [00 70 90]
+  #color map-fg [00 70 90]
   symbol-hide point blocks
   symbol-hide line contour
   symbol-hide line floor-step
@@ -41,6 +44,7 @@ encoding  utf-8
 select mapa@gemelas.CDA
 select mapa@caverna.CDA
 select mapa@stress.CDA
+select mapa@las_T.CDA
  
  
  export model -fmt loch

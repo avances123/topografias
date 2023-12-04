@@ -1,15 +1,12 @@
 encoding  utf-8
 survey stress  -title "Primeros metros de hilo cda" 
-
-
-
   survey hilo_principal_principio_encajonada 
     centerline 
       team "Fabio Rueda"
       date 2022.05.24
       calibrate depth 0 -1 #Pongo la profundidad en negativo
       calibrate tape 0 1 # Nudos cada 1 m
-      cs EPSG:4326
+		  cs EPSG:25831
       data diving station depth newline  tape backcompass
       0 11
         9.3 170
@@ -42,7 +39,7 @@ survey stress  -title "Primeros metros de hilo cda"
       date 2022.05.24
       calibrate depth 0 -1 #Pongo la profundidad en negativo
       calibrate tape 0 1 # Nudos cada 1 m
-      cs EPSG:4326
+		  cs EPSG:25831
       data diving station depth newline  tape backcompass
       0 11.8
         4.9 270
@@ -71,7 +68,7 @@ survey stress  -title "Primeros metros de hilo cda"
         date 2022.10.01
         calibrate depth 0 -1 #Pongo la profundidad en negativo
         calibrate tape 0 1 # Nudos cada 1 m
-        cs EPSG:4326
+		    cs EPSG:25831
         data diving station depth newline  tape compass
         0 10.2
           2.3 40
