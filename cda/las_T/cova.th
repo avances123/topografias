@@ -55,7 +55,9 @@ survey las_T  -title "De 100 a 200 metros"
 
   equate 2@bucle 20@bucle
 
-
+	map poly -projection plan
+    bucle
+	endmap
 
   input cova.th2
   map mapa -projection plan

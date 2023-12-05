@@ -1,0 +1,55 @@
+encoding  utf-8
+ language es
+ source cova.th
+
+
+ layout todo
+  map-header 0 100 sw # pone el header arriba a la izquierda
+  statistics topo-length on #on
+  statistics explo-length on
+  #rotate 30 #on
+  symbol-show group centerline
+  #symbol-hide point station:temporary
+  legend off
+  debug off
+  transparency on
+  #color map-fg [00 70 90
+
+
+code metapost #thin grey cave splays, yellow duplicates and dashed approximate legs
+  def l_survey_cave (expr P) =
+    T:=identity;
+    pickup PenC;
+    if (ATTR__shotflag_splay):
+      drawoptions(withcolor(0.5,0.9,0.9));
+      thdraw P;
+      drawoptions();
+    else: 
+      drawoptions(withcolor(0.9,0,0));
+      thdraw P;
+      drawoptions();
+    fi;
+  enddef;
+  endcode
+ 
+ endlayout
+ 
+
+select poly@gemelas.CDA
+select poly@caverna.CDA
+select poly@stress.CDA
+select poly@las_T.CDA
+ 
+ 
+export model -fmt loch
+ #export model -fmt esri -output cave.esri
+
+ #export map -layout-debug station-names
+#export map -layout todo -projection plan  -o cave_m.pdf -layout-debug station-names -layout-survey-level 1
+export map -layout todo -projection plan  -o cave_m.pdf 
+export cave-list -o lista.txt
+export atlas -layout todo   -o cave_a.pdf
+ #export map -projection plan  -o cave_m.pdf
+ #export atlas -projection plan -o cave_a.pdf
+ #export model -fmt kml -output cova_dels_arquets.kml
+ #export cave-list -location on

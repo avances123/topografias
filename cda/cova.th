@@ -1,0 +1,22 @@
+encoding  utf-8
+survey CDA  -title "Cueva del agua Hilo y Saltos" 
+
+  input gemelas/cova.th
+  input stress/cova.th
+  input caverna/cova.th
+  input las_T/cova.th
+
+
+  equate 0@hilo_caverna.caverna 0@hilo_principal_principio_encajonada.stress
+  equate 5@restriccion1.caverna 5@stress.stress
+  equate 11@caverna_galeria_izquierda.caverna 0@hilo_principal_principio_encajonada.stress
+  equate 0@caverna_gemelas.caverna 0@gemelas1.gemelas
+  equate 0@bucle.las_T 6@stress.stress # poste de los 100m
+  equate 15@bucle.las_T 6@encajonada.stress # de la encajonada al bucle
+
+  # No selecciono mapas con scraps solo poly
+  # join scrap1@caverna scrap1@gemelas
+  # join scrap1@caverna scrap1@stress
+  # join scrap1@las_T scrap1@stress
+
+endsurvey

@@ -71,14 +71,12 @@ survey caverna_gemelas
 		calibrate depth 0 -1 #Pongo la profundidad en negativo
 		calibrate tape 0 1 # Nudos cada 1 m
 		cs EPSG:25831
-		group
-		flags splay
 		data diving station depth newline  tape compass
+		
+		flags splay
 		2 12.5 # rem 5
 			15 250
-		3 13.2 #nudo galeria
-		endgroup
-		data diving station depth newline  tape compass
+		flags not splay
 		3 13.2 #nudo galeria
 			3 315
 		4 14.1 
@@ -93,7 +91,10 @@ survey caverna_gemelas
 			6 45
 		9 12
 			5 50
+		flags splay
 		10 11
+			4 45
+		11 10 
     endcenterline
   endsurvey
 
@@ -162,17 +163,23 @@ survey caverna_gemelas
 		calibrate depth 0 -1 #Pongo la profundidad en negativo
 		calibrate tape 0 1 # Nudos cada 1 m
 		cs EPSG:25831
-		group
-		flags splay
+		mark fixed
 		data diving station depth newline  tape compass
+		flags splay
 		0 12.6 # nudo al hilo pra
 			4 40
-		1 13.3 # nudo restriccon1
-		endgroup
-		data diving station depth newline  tape compass
+		flags not splay		
 		1 13.3 # nudo restriccon1
 			7.5 60
 		2 14.7
+			9 45
+		3 13
+			9 50
+		flags splay
+		4 12.6 # nudo al hilo pra
+			4 40
+		flags not splay
+		5 11	
     endcenterline
   endsurvey
 
@@ -205,14 +212,13 @@ survey caverna_gemelas
 		calibrate depth 0 -1 #Pongo la profundidad en negativo
 		calibrate tape 0 1 # Nudos cada 1 m
 		cs EPSG:25831
-		group
-		flags splay
+		mark fixed
 		data diving station depth newline  tape compass
+		
+		flags splay
 		0 13.6 # nudo a restriccion1
 			7.5 155
-		1 12.8
-		endgroup
-		data diving station depth newline  tape compass
+		flags not splay
 		1 12.8
 			3.2 70
 		2 12.6 # T con restriccion 3
@@ -249,12 +255,23 @@ survey restriccion3
   equate 0@restriccion2 1@restriccion1
   equate 0@hilo_caverna 0@hilo_principal_principio_encajonada
 
+	map poly -projection plan
+		hilo_caverna
+		hilo_principal_principio_encajonada
+		caverna_gemelas
+		caverna_galeria_izquierda
+		caverna_mar
+		moto
+		restriccion1
+		a_gemelas2
+		restriccion2
+		restriccion3
+	endmap
 
-
- input cova.th2
-  map mapa -projection plan
-    scrap1
-  endmap
+	input cova.th2
+	map mapa -projection plan
+		scrap1
+	endmap
 	  
 
 endsurvey

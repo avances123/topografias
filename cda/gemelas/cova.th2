@@ -159,9 +159,9 @@ point 142.0 -75.0 station
 
 point 176.0 -149.0 station
 
-point 8.0 -102.0 station -subtype fixed -name 1@galeria_verde
+point 8.0 -102.0 station  -name 1@galeria_verde
 
-point -62.0 -144.0 station -subtype fixed -name 2@galeria_verde
+point -62.0 -144.0 station  -name 2@galeria_verde
 
 line border -id l27-483--465 -close on -subtype invisible
   382.0 -543.0
@@ -321,11 +321,11 @@ line floor-step
   smooth off
 endline
 
-point 65.0 -543.0 station -subtype fixed -name 0@gemelas4
+point 65.0 -543.0 station  -name 0@gemelas4
 
-point -94.0 -440.0 station -subtype fixed -name 2@gemelas4
+point -94.0 -440.0 station  -name 2@gemelas4
 
-point -23.0 -420.0 station -subtype fixed -name 1@gemelas4
+point -23.0 -420.0 station  -name 1@gemelas4
 
 line wall
   -2.0 -58.0
@@ -491,40 +491,40 @@ endline
 
 point 32.0 -701.0 passage-height -value -12.8 -scale l
 
-point 14.0 -696.0 station -subtype fixed -name 11@gemelas3
+point 14.0 -696.0 station  -name 11@gemelas3
 
-point 122.0 -369.0 station -subtype fixed -name 10@gemelas3
+point 122.0 -369.0 station  -name 10@gemelas3
 
 point 453.0 -499.0 passage-height -value -14.7 -scale l
 
-point 180.0 -594.0 station -subtype fixed -name 1@union_gemelas
+point 180.0 -594.0 station  -name 1@union_gemelas
 
-point 461.0 -485.0 station -subtype fixed -name 1@gemelas2
+point 461.0 -485.0 station  -name 1@gemelas2
 
-point 215.0 -231.0 station -subtype fixed -name 9@gemelas1
+point 215.0 -231.0 station  -name 9@gemelas1
 
-point 327.0 -324.0 station -subtype fixed -name 8@gemelas1
+point 327.0 -324.0 station  -name 8@gemelas1
 
-point 351.0 -332.0 station -subtype fixed -name 7@gemelas1
+point 351.0 -332.0 station  -name 7@gemelas1
 
-point 382.0 -337.0 station -subtype fixed -name 6@gemelas1
+point 382.0 -337.0 station  -name 6@gemelas1
 
 point 409.0 -9.0 passage-height -value -15.3 -scale l
 
-point 471.0 -34.0 station -subtype fixed -name 5@gemelas1
+point 471.0 -34.0 station  -name 5@gemelas1
 
-point 437.0 -13.0 station -subtype fixed -name 4@gemelas1
+point 437.0 -13.0 station  -name 4@gemelas1
 
-point 215.0 -231.0 station -subtype fixed -name 3@gemelas1
+point 215.0 -231.0 station  -name 3@gemelas1
 
-point 176.0 -149.0 station -subtype fixed -name 2@gemelas1
+point 176.0 -149.0 station  -name 2@gemelas1
 
-point 142.0 -75.0 station -subtype fixed -name 1@gemelas1
+point 142.0 -75.0 station  -name 1@gemelas1
 
 line wall
 endline
 
-point 118.0 -36.0 station -subtype fixed -name 0@gemelas1
+point 118.0 -36.0 station  -name 0@gemelas1
 
 point 103.0 -10.0 entrance -orientation 152.5
 
