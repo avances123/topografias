@@ -11,7 +11,7 @@ encoding  utf-8
   symbol-show group centerline
   #symbol-hide point station:temporary
   legend off
-  debug off
+  debug on
   transparency on
   #color map-fg [00 70 90
 

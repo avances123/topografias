@@ -134,18 +134,15 @@ survey caverna_gemelas
 		calibrate depth 0 -1 #Pongo la profundidad en negativo
 		calibrate tape 0 1 # Nudos cada 1 m
 		cs EPSG:25831
-		group
-		flags splay
 		data diving station depth newline  tape compass
+		flags splay
 		0 10.6 # estribo
 			9 210
+		flags not splay
 		1 11.5
 			6.1 235
 		2 9.2
 			8 310
-		3 6.8
-		endgroup
-		data diving station depth newline  tape compass
 		3 6.8
 			7.6 280
 		4 6.7

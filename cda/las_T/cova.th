@@ -7,6 +7,7 @@ survey las_T  -title "De 100 a 200 metros"
       calibrate depth 0 -1 #Pongo la profundidad en negativo
       calibrate tape 0 1 # Nudos cada 1 m
 		  cs EPSG:25831
+      mark fixed
       data diving station depth newline  tape compass
       0 13.2 # poste de los 100m
         5.8 85
@@ -34,9 +35,9 @@ survey las_T  -title "De 100 a 200 metros"
         11.5 310
       12 10.6 # SEGUNDA T
         8.5 310
-      13 9.9 # SALTO hacia la derecha galeria peligrosa
+      13 9.9 # SALTO hacia la derecha galeria peligrosa (chara1)
         20.5 255
-      14 11.3 # SALTO sin señalizar a la derecha otra galeria peligrosa
+      14 11.3 # SALTO sin señalizar a la derecha otra galeria peligrosa (chara2)
         5.6 200
       15 11.6 # SALTO a la encajonada
         1 200
@@ -52,11 +53,201 @@ survey las_T  -title "De 100 a 200 metros"
     endcenterline
   endsurvey
 
+  survey la_cruz  # RE-TOPOGRAFIAR
+    survey eje1 
+      centerline 
+        team "Fabio Rueda"
+        date 2023.12.02
+        calibrate depth 0 -1 #Pongo la profundidad en negativo
+        calibrate tape 0 1 # Nudos cada 1 m
+        cs EPSG:25831
+        mark fixed
+        data diving station depth newline  tape compass
+        flags splay
+        0 10.8
+          4 250
+        flags not splay
+        1 11
+          5 190
+        2 11
+          12 200
+        3 11 #cruz 
+          7 200
+        4 11
+          7 260
+        flags splay
+        5 11
+          1 260
+        6 11
+
+      endcenterline
+    endsurvey
+    survey eje2
+      centerline 
+        team "Fabio Rueda"
+        date 2023.12.02
+        calibrate depth 0 -1 #Pongo la profundidad en negativo
+        calibrate tape 0 1 # Nudos cada 1 m
+        cs EPSG:25831
+        mark fixed
+        data diving station depth newline  tape compass
+        flags splay
+        0 10.8
+          4 45
+        flags not splay
+        1 11
+          12 110
+        2 11 # cruz
+          6 110
+        flags splay
+        3 11
+          5 160
+        4 11
+      endcenterline
+    endsurvey
+    equate 3@eje1 2@eje2
+
+  endsurvey
+
+  survey zig_zag1 
+    centerline 
+      team "Fabio Rueda"
+      date 2023.12.02
+      calibrate depth 0 -1 #Pongo la profundidad en negativo
+      calibrate tape 0 1 # Nudos cada 1 m
+		  cs EPSG:25831
+      mark fixed
+      data diving station depth newline  tape compass
+      flags splay
+      0 11
+        1 85
+      flags not splay
+      1 11
+        15 85
+      2 11
+        15 40
+      3 11
+        8 60
+      4 11
+        8 30
+      5 11
+        20 0
+      flags splay
+      6 11
+        10 320
+      7 11
+    endcenterline
+  endsurvey
+
+  survey ventana_larga 
+    centerline 
+      team "Fabio Rueda"
+      date 2023.12.02
+      calibrate depth 0 -1 #Pongo la profundidad en negativo
+      calibrate tape 0 1 # Nudos cada 1 m
+		  cs EPSG:25831
+      mark fixed
+      data diving station depth newline  tape compass
+      flags splay
+      0 11
+        7 140
+      flags not splay
+      1 11
+        4 190
+      2 11
+        8 210
+      3 11
+        8 230
+      flags splay
+      4 11
+        4 200
+      5 11
+    endcenterline
+  endsurvey
+
+  survey ventana_corta
+    centerline 
+      team "Fabio Rueda"
+      date 2023.12.02
+      calibrate depth 0 -1 #Pongo la profundidad en negativo
+      calibrate tape 0 1 # Nudos cada 1 m
+		  cs EPSG:25831
+      mark fixed
+      data diving station depth newline  tape compass
+      flags splay
+      0 11
+        7 180
+      flags not splay
+      1 11
+        6 210
+      flags splay
+      2 11
+        4 200
+      3 11
+    endcenterline
+  endsurvey
+
+
+  survey chara1
+    centerline 
+      team "Fabio Rueda"
+      date 2023.12.02
+      calibrate depth 0 -1 #Pongo la profundidad en negativo
+      calibrate tape 0 1 # Nudos cada 1 m
+		  cs EPSG:25831
+      mark fixed
+      data diving station depth newline  tape compass
+      flags splay
+      0 11
+        7 50
+      flags not splay
+      1 11
+        15 50
+      2 11
+    endcenterline
+  endsurvey
+
+    survey chara2
+    centerline 
+      team "Fabio Rueda"
+      date 2023.12.02
+      calibrate depth 0 -1 #Pongo la profundidad en negativo
+      calibrate tape 0 1 # Nudos cada 1 m
+		  cs EPSG:25831
+      mark fixed
+      data diving station depth newline  tape compass
+      flags splay
+      0 11
+        7 350
+      flags not splay
+      1 11
+        18 350
+      2 11
+        20 80
+      3 11
+    endcenterline
+  endsurvey
 
   equate 2@bucle 20@bucle
+  equate 4@bucle 0@zig_zag1
+  equate 9@bucle 5@ventana_larga
+  equate 10@bucle 3@ventana_corta
+  equate 11@bucle 0@eje1.la_cruz
+  equate 18@bucle 0@eje2.la_cruz
+  equate 5@bucle 4@eje2.la_cruz
+  equate 19@bucle 6@eje1.la_cruz
+  equate 13@bucle 0@chara1
+  equate 13@bucle 0@chara1
+  equate 14@bucle 0@chara2
 
 	map poly -projection plan
     bucle
+    zig_zag1
+    ventana_larga
+    ventana_corta
+    la_cruz
+    chara1
+    chara2
 	endmap
 
   input cova.th2
