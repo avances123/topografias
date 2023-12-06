@@ -7,31 +7,42 @@ encoding  utf-8
   map-header 0 100 sw # pone el header arriba a la izquierda
   statistics topo-length on #on
   statistics explo-length on
+
+  statistics topo all #on
+  statistics carto all #on
+  statistics explo all #on
   #rotate 30 #on
   symbol-show group centerline
+  symbol-show point flag:continuation
   #symbol-hide point station:temporary
-  legend off
-  debug on
-  transparency on
+  legend on
+  debug off
+  #transparency on
   #color map-fg [00 70 90
+  #nav-size 3 3
+  
 
-
-code metapost #thin grey cave splays, yellow duplicates and dashed approximate legs
-  def l_survey_cave (expr P) =
-    T:=identity;
-    pickup PenC;
-    if (ATTR__shotflag_splay):
-      drawoptions(withcolor(0.5,0.9,0.9));
-      thdraw P;
-      drawoptions();
-    else: 
-      drawoptions(withcolor(0.9,0,0));
-      thdraw P;
-      drawoptions();
-    fi;
-  enddef;
+  code metapost
+    def l_survey_cave (expr P) =
+      T:=identity;
+      pickup PenC;
+      if ATTR__shotflag_splay: % SALTOS
+        drawoptions(withcolor(0,0,1) withpen PenD); % Azul
+        thdraw P; 
+        drawoptions();
+      elseif ATTR__shotflag_approx: % RETOPOGRAFIAR
+        drawoptions(withcolor(0,1,0)); % Marron
+        thdraw P;	
+        drawoptions();
+      else: % HILO PRINCIPAL
+        drawoptions(withcolor(1,0,0)); % Rojo
+        thdraw P; 
+        drawoptions();
+      fi;
+      thdrawoptions();
+    enddef;
   endcode
- 
+
  endlayout
  
 
@@ -47,8 +58,8 @@ export model -fmt loch
  #export map -layout-debug station-names
 #export map -layout todo -projection plan  -o cave_m.pdf -layout-debug station-names -layout-survey-level 1
 export map -layout todo -projection plan  -o cave_m.pdf 
-export cave-list -o lista.txt
-export atlas -layout todo   -o cave_a.pdf
+export survey-list -o estadistica.txt
+export atlas -layout todo  -o cave_a.pdf -layout-size 50 30.2 cm
  #export map -projection plan  -o cave_m.pdf
  #export atlas -projection plan -o cave_a.pdf
  #export model -fmt kml -output cova_dels_arquets.kml

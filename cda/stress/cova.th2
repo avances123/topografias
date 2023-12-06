@@ -29,21 +29,21 @@ point 343.0 -184.0 station -name 2@encajonada -subtype fixed
 
 point 68.0 -310.0 station -name 1@encajonada -subtype fixed
 
-point 46.0 -342.0 station -name 7@hilo_principal_principio_encajonada -subtype fixed
+point 46.0 -342.0 station -name 7@primeros_metros -subtype fixed
 
-point 60.0 -432.0 station -name 6@hilo_principal_principio_encajonada -subtype fixed
+point 60.0 -432.0 station -name 6@primeros_metros -subtype fixed
 
-point 90.0 -602.0 station -name 5@hilo_principal_principio_encajonada -subtype fixed
+point 90.0 -602.0 station -name 5@primeros_metros -subtype fixed
 
-point 165.0 -743.0 station -name 4@hilo_principal_principio_encajonada -subtype fixed
+point 165.0 -743.0 station -name 4@primeros_metros -subtype fixed
 
-point 125.0 -777.0 station -name 3@hilo_principal_principio_encajonada -subtype fixed
+point 125.0 -777.0 station -name 3@primeros_metros -subtype fixed
 
-point 95.0 -955.0 station -name 2@hilo_principal_principio_encajonada -subtype fixed
+point 95.0 -955.0 station -name 2@primeros_metros -subtype fixed
 
-point 121.0 -1025.0 station -name 1@hilo_principal_principio_encajonada -subtype fixed
+point 121.0 -1025.0 station -name 1@primeros_metros -subtype fixed
 
-point 151.0 -1199.0 station -name 0@hilo_principal_principio_encajonada -subtype fixed
+point 151.0 -1199.0 station -name 0@primeros_metros -subtype fixed
 
 line wall
   628.0 -703.0

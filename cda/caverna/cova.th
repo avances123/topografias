@@ -1,5 +1,5 @@
 encoding  utf-8
-survey caverna  -title "Cueva del agua: caverna" 
+survey caverna  -title "Caverna" 
   survey hilo_caverna -entrance 7
     centerline
       	team "Fabio Rueda"
@@ -8,8 +8,8 @@ survey caverna  -title "Cueva del agua: caverna"
 		calibrate tape 0 1 # Nudos cada 1 m
 		cs EPSG:25831
 		#fix 7 127330.278 4167199.633 15
-		flags splay
 		data diving station depth newline  tape backcompass
+		flags splay
 		0 13 #nudo con el hilo pral
 			1.5 80
 		1 12.4
@@ -28,21 +28,7 @@ survey caverna  -title "Cueva del agua: caverna"
     endcenterline
   endsurvey
 
-survey hilo_principal_principio_encajonada 
-	# copiado del fichero stress, para pintar el inicio del hilo principal en este dibujo tambien.
-    centerline 
-      team "Fabio Rueda"
-      date 2022.09.30
-      calibrate depth 0 -1 #Pongo la profundidad en negativo
-      calibrate tape 0 1 # Nudos cada 1 m
-      cs EPSG:25831
-      data diving station depth newline  tape backcompass
-	  -1 9 # cartel inventado
-	  	5 170
-      0 11 # nudo al hilo 
-        9.3 170
-    endcenterline
-  endsurvey
+
 
 
 
@@ -109,11 +95,7 @@ survey caverna_gemelas
 		data diving station depth newline  tape compass
 		-1 9 
 			10 85
-		0 8.6 # nudo hacia la galeria del mar
-
-		group
 		flags splay
-		data diving station depth newline  tape compass
 		0 8.6 # nudo hacia la galeria del mar
 			13 80
 		1 8
@@ -123,7 +105,6 @@ survey caverna_gemelas
 		3 9.4
 			9	180
 		4 10.6 # estribo
-		endgroup
     endcenterline
   endsurvey
 
@@ -250,11 +231,9 @@ survey restriccion3
   equate 3@a_gemelas2 7@hilo_caverna
   equate 0@a_gemelas2 0@caverna_gemelas
   equate 0@restriccion2 1@restriccion1
-  equate 0@hilo_caverna 0@hilo_principal_principio_encajonada
 
 	map poly -projection plan
 		hilo_caverna
-		hilo_principal_principio_encajonada
 		caverna_gemelas
 		caverna_galeria_izquierda
 		caverna_mar

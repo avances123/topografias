@@ -1,6 +1,6 @@
 encoding  utf-8
-survey stress  -title "Primeros metros de hilo cda" 
-  survey hilo_principal_principio_encajonada 
+survey stress  -title "De_0_a_100" 
+  survey primeros_metros 
     centerline 
       team "Fabio Rueda"
       date 2022.05.24
@@ -85,13 +85,13 @@ survey stress  -title "Primeros metros de hilo cda"
   endsurvey
 
 
-  equate 0@encajonada 7@hilo_principal_principio_encajonada
-  equate 3@hilo_principal_principio_encajonada 0@stress
+  equate 0@encajonada 7@primeros_metros
+  equate 3@primeros_metros 0@stress
 
   
 
 	map poly -projection plan
-		hilo_principal_principio_encajonada
+		primeros_metros
 		stress
 		encajonada
 	endmap

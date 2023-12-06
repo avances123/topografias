@@ -1,6 +1,6 @@
 encoding  utf-8
 
-survey gemelas  -title "Las Gemelas"
+survey gemelas  -title "Las_Gemelas"
     survey gemelas1
       centerline
         team "Fabio Rueda"

@@ -34,8 +34,6 @@ point 460.0 -825.0 archeo-material
 
 point 765.0 -278.0 label -text "Cartel informativo"
 
-point 763.0 -252.0 station -subtype fixed -name -1@hilo_principal_principio_encajonada
-
 line pit-chimney -close on
   371.0 -740.0
   371.0 -740.0 390.38 -704.4 409.0 -689.0
