@@ -8,8 +8,8 @@ survey CDA  -title "Cueva_del_Agua"
 
 
   equate 0@hilo_caverna.caverna 0@primeros_metros.stress
-  equate 5@restriccion1.caverna 5@stress.stress
-  equate 11@caverna_galeria_izquierda.caverna 0@primeros_metros.stress
+  equate 5@restriccion1.restricciones_cartel.caverna 5@stress.stress
+  equate 11@buclecito.caverna 0@primeros_metros.stress
   equate 0@caverna_gemelas.caverna 0@gemelas1.gemelas
   equate 0@bucle.las_T 6@stress.stress # poste de los 100m
   equate 15@bucle.las_T 6@encajonada.stress # de la encajonada al bucle

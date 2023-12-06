@@ -68,13 +68,16 @@ survey gemelas  -title "Las_Gemelas"
     endsurvey
     
     
-    survey gemelas4
+    survey galeria_soto
       centerline
         team "Fabio Rueda"
         date 2022.08.13
         calibrate depth 0 -1 #Pongo la profundidad en negativo
         calibrate tape 0 1 # Nudos cada 1 m
         cs EPSG:25831
+        station 2 "Hacia la chara" continuation
+
+
         mark fixed
         data diving station depth newline  tape compass
         flags splay		
@@ -94,6 +97,8 @@ survey gemelas  -title "Las_Gemelas"
       calibrate depth 0 -1 #Pongo la profundidad en negativo
       calibrate tape 0 1 # Nudos cada 1 m
       cs EPSG:25831
+      station 4 "No puedo pasar con el hilo" continuation
+
       mark fixed
       data diving station depth newline  tape compass
       flags splay # salto a la galeria, no cuenta en las stats
@@ -132,7 +137,7 @@ survey gemelas  -title "Las_Gemelas"
     equate 3@gemelas1 9@gemelas1
     equate 3@gemelas1 9@gemelas3
     equate 8@gemelas1 0@gemelas2
-    equate 10a@gemelas3 0@gemelas4
+    equate 10a@gemelas3 0@galeria_soto
     equate 0@gemelas1 0@galeria_verde
     
     map poly -projection plan
@@ -140,7 +145,7 @@ survey gemelas  -title "Las_Gemelas"
       gemelas1
       gemelas2
       gemelas3
-      gemelas4
+      galeria_soto
       union_gemelas
     endmap
 

@@ -1,5 +1,7 @@
 encoding  utf-8
 survey las_T  -title "De_100_a_200" 
+
+
   survey bucle 
     centerline 
       team "Fabio Rueda"
@@ -230,6 +232,7 @@ survey las_T  -title "De_100_a_200"
   equate 13@bucle 0@chara1
   equate 13@bucle 0@chara1
   equate 14@bucle 0@chara2
+
 
 	map poly -projection plan
     bucle

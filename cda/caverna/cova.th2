@@ -66,17 +66,17 @@ point 674.0 -729.0 station -name 6@hilo_caverna
 
 point 740.0 -530.0 station -name 5@hilo_caverna -subtype temporary
 
-point 923.0 -309.0 station -name 1@restriccion3 -subtype fixed
+point 923.0 -309.0 station -name 1@restriccion3.restricciones_cartel -subtype fixed
 
-point 1018.0 -141.0 station -name 3@restriccion2 -subtype fixed
+point 1018.0 -141.0 station -name 3@restriccion2.restricciones_cartel -subtype fixed
 
-point 861.0 -232.0 station -name 2@restriccion2 -subtype fixed
+point 861.0 -232.0 station -name 2@restriccion2.restricciones_cartel -subtype fixed
 
-point 825.0 -244.0 station -name 1@restriccion2 -subtype fixed
+point 825.0 -244.0 station -name 1@restriccion2.restricciones_cartel -subtype fixed
 
-point 863.0 -116.0 station -name 2@restriccion1 -subtype fixed
+point 863.0 -116.0 station -name 2@restriccion1.restricciones_cartel -subtype fixed
 
-point 787.0 -163.0 station -name 1@restriccion1 -subtype fixed
+point 787.0 -163.0 station -name 1@restriccion1.restricciones_cartel -subtype fixed
 
 point 666.0 -743.0 station -name 2@a_gemelas2
 
@@ -104,21 +104,21 @@ point 319.0 -726.0 station -name 1@caverna_mar
 
 point 160.0 -752.0 station -name 0@caverna_mar -subtype fixed
 
-point 727.0 -245.0 station -name 10@caverna_galeria_izquierda -subtype fixed
+point 727.0 -245.0 station -name 10@buclecito -subtype fixed
 
-point 684.0 -279.0 station -name 9@caverna_galeria_izquierda -subtype fixed
+point 684.0 -279.0 station -name 9@buclecito -subtype fixed
 
-point 624.0 -323.0 station -name 8@caverna_galeria_izquierda -subtype fixed
+point 624.0 -323.0 station -name 8@buclecito -subtype fixed
 
-point 572.0 -394.0 station -name 7@caverna_galeria_izquierda -subtype fixed
+point 572.0 -394.0 station -name 7@buclecito -subtype fixed
 
-point 567.0 -425.0 station -name 6@caverna_galeria_izquierda -subtype fixed
+point 567.0 -425.0 station -name 6@buclecito -subtype fixed
 
-point 564.0 -466.0 station -name 5@caverna_galeria_izquierda -subtype fixed
+point 564.0 -466.0 station -name 5@buclecito -subtype fixed
 
-point 565.0 -505.0 station -name 4@caverna_galeria_izquierda -subtype fixed
+point 565.0 -505.0 station -name 4@buclecito -subtype fixed
 
-point 592.0 -529.0 station -name 3@caverna_galeria_izquierda -subtype fixed
+point 592.0 -529.0 station -name 3@buclecito -subtype fixed
 
 point 763.0 -466.0 station -name 4@hilo_caverna
 

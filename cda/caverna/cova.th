@@ -50,7 +50,7 @@ survey caverna_gemelas
   endsurvey
 
 
-  survey caverna_galeria_izquierda
+  survey buclecito
     centerline
       	team "Fabio Rueda"
 		date 2022.09.30
@@ -58,7 +58,6 @@ survey caverna_gemelas
 		calibrate tape 0 1 # Nudos cada 1 m
 		cs EPSG:25831
 		data diving station depth newline  tape compass
-		
 		flags splay
 		2 12.5 # rem 5
 			15 250
@@ -92,7 +91,10 @@ survey caverna_gemelas
 		calibrate depth 0 -1 #Pongo la profundidad en negativo
 		calibrate tape 0 1 # Nudos cada 1 m
 		cs EPSG:25831
+		station -1 "Hacia la zona del mar" continuation
+
 		data diving station depth newline  tape compass
+		flags approx
 		-1 9 
 			10 85
 		flags splay
@@ -115,6 +117,8 @@ survey caverna_gemelas
 		calibrate depth 0 -1 #Pongo la profundidad en negativo
 		calibrate tape 0 1 # Nudos cada 1 m
 		cs EPSG:25831
+		station 6 "Fin del hilo" continuation
+
 		data diving station depth newline  tape compass
 		flags splay
 		0 10.6 # estribo
@@ -131,33 +135,6 @@ survey caverna_gemelas
 		5 6.5
 			5 280
 		6 4 # fin del hilo
-    endcenterline
-  endsurvey
-
-  survey restriccion1
-    centerline
-      	team "Fabio Rueda"
-		date 2022.10.01
-		calibrate depth 0 -1 #Pongo la profundidad en negativo
-		calibrate tape 0 1 # Nudos cada 1 m
-		cs EPSG:25831
-		mark fixed
-		data diving station depth newline  tape compass
-		flags splay
-		0 12.6 # nudo al hilo pra
-			4 40
-		flags not splay		
-		1 13.3 # nudo restriccon1
-			7.5 60
-		2 14.7
-			9 45
-		3 13
-			9 50
-		flags splay
-		4 12.6 # nudo al hilo pra
-			4 40
-		flags not splay
-		5 11	
     endcenterline
   endsurvey
 
@@ -182,66 +159,93 @@ survey caverna_gemelas
   endsurvey
 
 
+  survey restricciones_cartel
+	survey restriccion1
+		centerline
+			team "Fabio Rueda"
+			date 2022.10.01
+			calibrate depth 0 -1 #Pongo la profundidad en negativo
+			calibrate tape 0 1 # Nudos cada 1 m
+			cs EPSG:25831
+			mark fixed
+			data diving station depth newline  tape compass
+			flags splay
+			0 12.6 # nudo al hilo pra
+				4 40
+			flags not splay		
+			1 13.3 # nudo restriccon1
+				7.5 60
+			2 14.7
+				9 45
+			3 13
+				9 50
+			flags splay
+			4 12.6 # nudo al hilo pra
+				4 40
+			flags not splay
+			5 11	
+		endcenterline
+	endsurvey
 
-  survey restriccion2
-    centerline
-      	team "Fabio Rueda"
-		date 2022.10.01
-		calibrate depth 0 -1 #Pongo la profundidad en negativo
-		calibrate tape 0 1 # Nudos cada 1 m
-		cs EPSG:25831
-		mark fixed
-		data diving station depth newline  tape compass
-		
-		flags splay
-		0 13.6 # nudo a restriccion1
-			7.5 155
-		flags not splay
-		1 12.8
-			3.2 70
-		2 12.6 # T con restriccion 3
-			15 60
-		3 11
-			
-    endcenterline
+	survey restriccion2
+		centerline
+			team "Fabio Rueda"
+			date 2022.10.01
+			calibrate depth 0 -1 #Pongo la profundidad en negativo
+			calibrate tape 0 1 # Nudos cada 1 m
+			cs EPSG:25831
+			mark fixed
+			station 3 "Creo que aparece en los 100m" continuation
+			data diving station depth newline  tape compass
+			flags splay
+			0 13.6 # nudo a restriccion1
+				7.5 155
+			flags not splay
+			1 12.8
+				3.2 70
+			2 12.6 # T con restriccion 3
+				15 60
+			3 11
+				
+		endcenterline
+	endsurvey
+
+	survey restriccion3
+		centerline
+			team "Fabio Rueda"
+			date 2022.10.01
+			calibrate depth 0 -1 #Pongo la profundidad en negativo
+			calibrate tape 0 1 # Nudos cada 1 m
+			cs EPSG:25831
+			station 1 "Va hacia las gemelas" continuation
+			data diving station depth newline  tape compass
+			0 12.6
+				8 140
+			1 13
+		endcenterline
+	endsurvey
   endsurvey
 
-survey restriccion3
-    centerline
-      	team "Fabio Rueda"
-		date 2022.10.01
-		calibrate depth 0 -1 #Pongo la profundidad en negativo
-		calibrate tape 0 1 # Nudos cada 1 m
-		cs EPSG:25831
-		data diving station depth newline  tape compass
-		0 12.6
-			8 140
-		1 13
-    endcenterline
-  endsurvey
 
 
-
-  equate 2@restriccion2 0@restriccion3
+  equate 2@restriccion2.restricciones_cartel 0@restriccion3.restricciones_cartel
   equate 2@caverna_gemelas 4@hilo_caverna
-  equate 2@caverna_galeria_izquierda 4@hilo_caverna
+  equate 2@buclecito 4@hilo_caverna
   equate 4@caverna_mar 7@hilo_caverna
   equate 0@moto 7@hilo_caverna
-  equate 0@restriccion1 0@hilo_caverna
+  equate 0@restriccion1.restricciones_cartel 0@hilo_caverna
   equate 3@a_gemelas2 7@hilo_caverna
   equate 0@a_gemelas2 0@caverna_gemelas
-  equate 0@restriccion2 1@restriccion1
+  equate 0@restriccion2.restricciones_cartel 1@restriccion1.restricciones_cartel
 
 	map poly -projection plan
 		hilo_caverna
 		caverna_gemelas
-		caverna_galeria_izquierda
+		buclecito
 		caverna_mar
 		moto
-		restriccion1
 		a_gemelas2
-		restriccion2
-		restriccion3
+		restricciones_cartel
 	endmap
 
 	input cova.th2
