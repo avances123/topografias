@@ -50,10 +50,12 @@ select poly@gemelas.CDA
 select poly@caverna.CDA
 select poly@stress.CDA
 select poly@las_T.CDA
+select poly@200_300.CDA
  
  
 export model -fmt loch
- #export model -fmt esri -output cave.esri
+export model -fmt vrml -output cave.wrl
+export model -fmt 3dmf -output cave.3dm
 
  #export map -layout-debug station-names
 #export map -layout todo -projection plan  -o cave_m.pdf -layout-debug station-names -layout-survey-level 1

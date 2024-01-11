@@ -1,0 +1,91 @@
+encoding  utf-8
+survey 200_300  -title "De_200_a_300" 
+
+
+  survey hilo_pral 
+    centerline 
+      team "Fabio Rueda"
+      date 2024.01.11
+      calibrate depth 0 -1 #Pongo la profundidad en negativo
+      calibrate tape 0 1 # Nudos cada 1 m
+		  cs EPSG:25831
+      mark fixed
+      station 0 "La segunda T" 
+      station 6 "Salto hacia la derecha a 1m" 
+      station 7 "Marca topo oficial E-16" 
+      station 10 "Salto a la derecha a 1m" 
+      station 11 "Salto a la derecha-abajo a 4m" 
+      station 12 "Cartel de 300m" continuation
+      data diving station depth newline  tape compass
+      0 10.9 
+        11 50
+      1 11.6
+        1 100
+      2 11.5
+        7.2 100
+      3 11.4
+        6 75
+      4 12
+        7 75
+      5 12.3
+        10 65
+      6 12
+        2.5 70
+      7 11.7
+        20 40
+      8 11.4
+        5.5 50
+      9 11.2
+        2.6 55
+      10 11.1
+        13 55
+      11 11.5
+        20 65
+      12 11.6
+    endcenterline
+  endsurvey
+
+
+
+  survey chara3 
+    centerline 
+      team "Fabio Rueda"
+      date 2024.01.11
+      calibrate depth 0 -1 #Pongo la profundidad en negativo
+      calibrate tape 0 1 # Nudos cada 1 m
+		  cs EPSG:25831
+      mark fixed
+      data diving station depth newline tape compass
+      flags splay
+      0 12
+        4 30
+      flags not splay
+      1 12
+        5.2 30
+      2 13.2
+        5.5 10
+      3 14
+        8.5 20
+      4 14 
+
+    endcenterline
+  endsurvey
+
+
+
+
+  equate 0@chara3 2@hilo_pral
+
+
+	map poly -projection plan
+    hilo_pral
+    chara3
+	endmap
+
+  # input cova.th2
+  # map mapa -projection plan
+  #   scrap1
+  # endmap
+
+
+endsurvey

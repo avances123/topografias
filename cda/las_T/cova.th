@@ -10,7 +10,7 @@ survey las_T  -title "De_100_a_200"
       calibrate tape 0 1 # Nudos cada 1 m
 		  cs EPSG:25831
       mark fixed
-      station 12 "La segunda T" continuation
+      station 12 "La segunda T"
       data diving station depth newline  tape compass
       0 13.2 # poste de los 100m
         5.8 85
@@ -120,7 +120,6 @@ survey las_T  -title "De_100_a_200"
       0 11
         1 85
       flags not splay
-      flags approx
       1 11
         15 85
       2 11
@@ -130,7 +129,8 @@ survey las_T  -title "De_100_a_200"
       4 11
         8 30
       5 11
-        20 0
+        15 0
+      flags splay
       6 11
         10 320
       7 11
@@ -146,15 +146,17 @@ survey las_T  -title "De_100_a_200"
 		  cs EPSG:25831
       mark fixed
       data diving station depth newline  tape compass
-      flags approx
+      flags splay
       0 11
         7 140
+      flags not splay
       1 11
         4 190
       2 11
-        8 210
+        6 210
       3 11
-        8 230
+        6 230
+      flags splay
       4 11
         4 200
       5 11
@@ -170,11 +172,13 @@ survey las_T  -title "De_100_a_200"
 		  cs EPSG:25831
       mark fixed
       data diving station depth newline  tape compass
-      flags approx
+      flags splay
       0 11
         7 180
+      flags not splay
       1 11
         6 210
+      flags splay
       2 11
         4 200
       3 11
@@ -182,25 +186,56 @@ survey las_T  -title "De_100_a_200"
   endsurvey
 
 
+
   survey chara1
-    centerline 
-      team "Fabio Rueda"
-      date 2023.12.02
-      calibrate depth 0 -1 #Pongo la profundidad en negativo
-      calibrate tape 0 1 # Nudos cada 1 m
-		  cs EPSG:25831
-      mark fixed
-      data diving station depth newline  tape compass
-      flags approx
-      0 11
-        7 50
-      1 11
-        15 50
-      2 11
-    endcenterline
+    survey chara1_1
+      centerline 
+        team "Fabio Rueda"
+        date 2024.01.11
+        calibrate depth 0 -1 #Pongo la profundidad en negativo
+        calibrate tape 0 1 # Nudos cada 1 m
+        cs EPSG:25831
+        mark fixed
+        station 3 "Sigue un poco mas a ese rumbo y gira 90º a la izq" continuation
+        data diving station depth newline  tape compass
+        flags splay
+        0 10
+          1 45
+        flags not splay
+        1 9.9
+          6 350
+        2 9.7
+          11 40
+        flags approx
+        3 13
+          5 50
+        4 13
+          5 320
+        5 11
+      endcenterline
+    endsurvey
+    survey chara1_2
+      centerline 
+        team "Fabio Rueda"
+        date 2024.01.11
+        calibrate depth 0 -1 #Pongo la profundidad en negativo
+        calibrate tape 0 1 # Nudos cada 1 m
+        cs EPSG:25831
+        mark fixed
+        station 1 "Se encuentra a 1m del otro hilo" 
+        data diving station depth newline  tape compass
+        flags approx
+        0 11
+          13 60
+        1 11
+          5 70
+        2 11
+      endcenterline
+    endsurvey
+    equate 4@chara1_1 0@chara1_2
   endsurvey
 
-    survey chara2
+  survey chara2
     centerline 
       team "Fabio Rueda"
       date 2023.12.02
@@ -229,8 +264,7 @@ survey las_T  -title "De_100_a_200"
   equate 18@bucle 0@eje2.la_cruz
   equate 5@bucle 4@eje2.la_cruz
   equate 19@bucle 6@eje1.la_cruz
-  equate 13@bucle 0@chara1
-  equate 13@bucle 0@chara1
+  equate 13@bucle 0@chara1_1.chara1
   equate 14@bucle 0@chara2
 
 
