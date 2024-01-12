@@ -196,7 +196,7 @@ survey las_T  -title "De_100_a_200"
         calibrate tape 0 1 # Nudos cada 1 m
         cs EPSG:25831
         mark fixed
-        station 3 "Sigue un poco mas a ese rumbo y gira 90º a la izq" continuation
+        station 3 "Sigue un poco mas a ese rumbo y gira 90º a la izq" 
         data diving station depth newline  tape compass
         flags splay
         0 10
@@ -206,9 +206,9 @@ survey las_T  -title "De_100_a_200"
           6 350
         2 9.7
           11 40
-        flags approx
         3 13
-          5 50
+          8 50
+        flags approx
         4 13
           5 320
         5 11
@@ -224,7 +224,6 @@ survey las_T  -title "De_100_a_200"
         mark fixed
         station 1 "Se encuentra a 1m del otro hilo" 
         data diving station depth newline  tape compass
-        flags approx
         0 11
           13 60
         1 11
@@ -242,17 +241,23 @@ survey las_T  -title "De_100_a_200"
       calibrate depth 0 -1 #Pongo la profundidad en negativo
       calibrate tape 0 1 # Nudos cada 1 m
 		  cs EPSG:25831
-      station 3 "Hacia la chara" continuation
+      station 5 "Hacia la chara" continuation
       mark fixed
       data diving station depth newline  tape compass
-      flags approx
-      0 11
-        7 350
-      1 11
-        18 350
+      flags splay
+      0 11.1
+        4.5 320
+      flags not splay
+      1 11.2
+        5 355
       2 11
-        20 80
-      3 11
+        4 340
+      flags approx
+      3 10.7
+        10 20
+      4 12
+        12 45
+      5 12
     endcenterline
   endsurvey
 

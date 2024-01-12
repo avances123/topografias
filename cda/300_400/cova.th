@@ -1,0 +1,134 @@
+encoding  utf-8
+survey 300_400  -title "De_300_a_400" 
+
+
+  survey hilo_pral 
+    centerline 
+      team "Fabio Rueda"
+      date 2024.01.12
+      calibrate depth 0 -1 #Pongo la profundidad en negativo
+      calibrate tape 0 1 # Nudos cada 1 m
+		  cs EPSG:25831
+      mark fixed
+      station 0 "E-25" continuation
+      station 2 "Cartel de 400m"
+      station 3 "Corchito de piscina"
+      station 4 "E-23 Salto a la izquierda POSIBLE GALERIA VIGARTO"
+      station 5 "Salto a la izquierda POSIBLE GALERIA VIGARTO"
+      station 7 "E-21"
+      station 8 "Salto a la izquierda 4m POSIBLE GALERIA VIGARTO" 
+      station 10 "E-20" 
+      station 11 "E-19" 
+      station 12 "E-18"
+      station 14 "Cartel de 300m"
+      data diving station depth newline  tape compass
+      0 9.8
+        4.8 205
+      1 9.7
+        11.5 210
+      2 11.4
+        9.6 240
+      3 10.2
+        9.8 240
+      4 8.2
+        21.5 240
+      5 13.2
+        5 225
+      6 12.2
+        6.9 235
+      7 12.7
+        1 260
+      8 12.7
+        11 260
+      9 12.8
+        10.5 260
+      10 10.9
+        14.5 225
+      11 11.7
+        15.8 280
+      12 11.4
+        2 280
+      13 11.3
+        5 260
+      14 11.6
+    endcenterline
+  endsurvey
+
+survey salto_1
+    centerline 
+      team "Fabio Rueda"
+      date 2024.01.12
+      calibrate depth 0 -1 #Pongo la profundidad en negativo
+      calibrate tape 0 1 # Nudos cada 1 m
+		  cs EPSG:25831
+      mark fixed
+      data diving station depth newline  tape compass
+      flags splay
+      0 13.2
+        2 320
+      flags not splay
+      flags approx
+      1 13.2
+        5 320
+      2 13.2
+    endcenterline
+  endsurvey
+
+survey salto_2
+    centerline 
+      team "Fabio Rueda"
+      date 2024.01.12
+      calibrate depth 0 -1 #Pongo la profundidad en negativo
+      calibrate tape 0 1 # Nudos cada 1 m
+		  cs EPSG:25831
+      mark fixed
+      data diving station depth newline  tape compass
+      flags splay
+      0 13.2
+        2 320
+      flags not splay
+      flags approx
+      1 13.2
+        5 320
+      2 13.2
+    endcenterline
+  endsurvey
+
+  survey salto_3
+    centerline 
+      team "Fabio Rueda"
+      date 2024.01.12
+      calibrate depth 0 -1 #Pongo la profundidad en negativo
+      calibrate tape 0 1 # Nudos cada 1 m
+		  cs EPSG:25831
+      mark fixed
+      data diving station depth newline  tape compass
+      flags splay
+      0 13.2
+        4 320
+      flags not splay
+      flags approx
+      1 13.2
+        5 320
+      2 13.2
+    endcenterline
+  endsurvey
+
+  equate 4@hilo_pral 0@salto_1
+  equate 5@hilo_pral 0@salto_2
+  equate 8@hilo_pral 0@salto_3
+
+	map poly -projection plan
+    hilo_pral
+    salto_1
+    salto_2
+    salto_3
+	endmap
+
+  # input cova.th2
+  # map mapa -projection plan
+  #   scrap1
+  # endmap
+
+
+endsurvey

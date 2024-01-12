@@ -16,7 +16,7 @@ encoding  utf-8
   symbol-show point flag:continuation
   #symbol-hide point station:temporary
   legend on
-  debug off
+  debug all
   #transparency on
   #color map-fg [00 70 90
   #nav-size 3 3
@@ -51,6 +51,7 @@ select poly@caverna.CDA
 select poly@stress.CDA
 select poly@las_T.CDA
 select poly@200_300.CDA
+select poly@300_400.CDA
  
  
 export model -fmt loch

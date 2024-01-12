@@ -15,7 +15,7 @@ survey 200_300  -title "De_200_a_300"
       station 7 "Marca topo oficial E-16" 
       station 10 "Salto a la derecha a 1m" 
       station 11 "Salto a la derecha-abajo a 4m" 
-      station 12 "Cartel de 300m" continuation
+      station 12 "Cartel de 300m" 
       data diving station depth newline  tape compass
       0 10.9 
         11 50
@@ -46,6 +46,70 @@ survey 200_300  -title "De_200_a_300"
   endsurvey
 
 
+  survey salto_1 
+    centerline 
+      team "Fabio Rueda"
+      date 2024.01.12
+      calibrate depth 0 -1 #Pongo la profundidad en negativo
+      calibrate tape 0 1 # Nudos cada 1 m
+		  cs EPSG:25831
+      mark fixed
+      data diving station depth newline  tape compass
+      flags splay
+      0 11.1
+        1 160
+      flags not splay
+      flags approx
+      1 11.3
+        4 110
+      2 11
+    endcenterline
+  endsurvey
+
+
+  survey salto_2
+    centerline 
+      team "Fabio Rueda"
+      date 2024.01.12
+      calibrate depth 0 -1 #Pongo la profundidad en negativo
+      calibrate tape 0 1 # Nudos cada 1 m
+		  cs EPSG:25831
+      mark fixed
+      data diving station depth newline  tape compass
+      flags splay
+      0 11.1
+        1 160
+      flags not splay
+      flags approx
+      1 11.3
+        4 150
+      2 11
+    endcenterline
+  endsurvey
+
+  survey derecha_abajo 
+    centerline 
+      team "Fabio Rueda"
+      date 2024.01.11
+      calibrate depth 0 -1 #Pongo la profundidad en negativo
+      calibrate tape 0 1 # Nudos cada 1 m
+		  cs EPSG:25831
+      mark fixed
+      data diving station depth newline tape compass
+      flags splay
+      0 11.8
+        2.5 110
+      flags not splay
+      1 13.4
+        3 110
+      flags approx
+      2 14.6
+        8 200
+      3 15
+
+    endcenterline
+  endsurvey
+
 
   survey chara3 
     centerline 
@@ -66,7 +130,10 @@ survey 200_300  -title "De_200_a_300"
         5.5 10
       3 14
         8.5 20
-      4 14 
+      flags splay
+      4 14
+        1 320
+      5 14
 
     endcenterline
   endsurvey
@@ -75,11 +142,16 @@ survey 200_300  -title "De_200_a_300"
 
 
   equate 0@chara3 2@hilo_pral
-
+  equate 0@derecha_abajo 11@hilo_pral
+  equate 0@salto_1 6@hilo_pral
+  equate 0@salto_2 10@hilo_pral
 
 	map poly -projection plan
     hilo_pral
     chara3
+    derecha_abajo
+    salto_1
+    salto_2
 	endmap
 
   # input cova.th2

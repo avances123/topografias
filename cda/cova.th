@@ -6,6 +6,7 @@ survey CDA  -title "Cueva_del_Agua"
   input caverna/cova.th
   input las_T/cova.th
   input 200_300/cova.th
+  input 300_400/cova.th
 
 
   equate 0@hilo_caverna.caverna 0@primeros_metros.stress
@@ -15,12 +16,14 @@ survey CDA  -title "Cueva_del_Agua"
   equate 0@bucle.las_T 6@stress.stress # poste de los 100m
   equate 15@bucle.las_T 6@encajonada.stress # de la encajonada al bucle
   equate 0@hilo_pral.200_300 12@bucle.las_T
+  equate 14@hilo_pral.300_400 12@hilo_pral.200_300
 
 
   # Saltos entre las T y los 200-300
   equate 3@hilo_pral.200_300 0@ventana_corta.las_T
   equate 4@hilo_pral.200_300 0@ventana_larga.las_T
   equate 5@hilo_pral.200_300 7@zig_zag1.las_T
+  equate 1@chara1_2.chara1.las_T 5@chara3.200_300
 
   # No selecciono mapas con scraps solo poly
   # join scrap1@caverna scrap1@gemelas

@@ -1,5 +1,5 @@
 Title	Length	Depth	Explored	Approx.	Duplicate	Surface	Shots	Stations
-Cueva_del_Agua	940	12	0	146	0	0	152	181
+Cueva_del_Agua	1092	12	0	131	0	0	182	218
   Las_Gemelas	164	10	0	0	0	0	21	27
     gemelas1	68	7	0	0	0	0	9	10
     gemelas2	13	4	0	0	0	0	1	2
@@ -22,7 +22,7 @@ Cueva_del_Agua	940	12	0	146	0	0	152	181
       restriccion1	26	2	0	0	0	0	5	6
       restriccion2	18	2	0	0	0	0	3	4
       restriccion3	8	0	0	0	0	0	1	2
-  De_100_a_200	413	3	0	136	0	0	55	64
+  De_100_a_200	402	3	0	90	0	0	57	66
     bucle	177	2	0	0	0	0	20	21
     la_cruz	63	1	0	63	0	0	10	12
       eje1	36	1	0	36	0	0	6	7
@@ -30,10 +30,18 @@ Cueva_del_Agua	940	12	0	146	0	0	152	181
     zig_zag1	61	0	0	0	0	0	7	8
     ventana_larga	16	0	0	0	0	0	5	6
     ventana_corta	6	0	0	0	0	0	3	4
-    chara1	45	3	0	28	0	0	7	9
-      chara1_1	27	3	0	10	0	0	5	6
-      chara1_2	18	0	0	18	0	0	2	3
-    chara2	45	0	0	45	0	0	3	4
-  De_200_a_300	125	3	0	0	0	0	16	18
+    chara1	48	3	0	5	0	0	7	9
+      chara1_1	30	3	0	5	0	0	5	6
+      chara1_2	18	0	0	0	0	0	2	3
+    chara2	31	1	0	22	0	0	5	6
+  De_200_a_300	144	4	0	16	0	0	24	29
     hilo_pral	106	1	0	0	0	0	12	13
-    chara3	19	2	0	0	0	0	4	5
+    salto_1	4	0	0	4	0	0	2	3
+    salto_2	4	0	0	4	0	0	2	3
+    derecha_abajo	11	2	0	8	0	0	3	4
+    chara3	19	2	0	0	0	0	5	6
+  De_300_a_400	144	5	0	15	0	0	20	24
+    hilo_pral	129	5	0	0	0	0	14	15
+    salto_1	5	0	0	5	0	0	2	3
+    salto_2	5	0	0	5	0	0	2	3
+    salto_3	5	0	0	5	0	0	2	3
