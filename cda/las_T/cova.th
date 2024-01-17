@@ -115,27 +115,81 @@ survey las_T  -title "De_100_a_200"
       calibrate tape 0 1 # Nudos cada 1 m
 		  cs EPSG:25831
       mark fixed
+      station 4 "Flecha donde abandone mi carrete amarillo"
       data diving station depth newline  tape compass
       flags splay
-      0 11
-        1 85
+      0 11.8
+        1.5 130
       flags not splay
-      1 11
-        15 85
-      2 11
-        15 40
-      3 11
-        8 60
-      4 11
-        8 30
-      5 11
-        15 0
+      1 12.1
+        14 180
+      2 10.4
+        10 190
+      3 11.1
+        4.5 230
+      4 11.4
+        9.5 230
+      5 10.5
+        6.1 250
+      6 10.8
+        5.5 235
+      7 10.6
+        8 265
       flags splay
-      6 11
-        10 320
-      7 11
+      8 11.6
+        1 300
+      9 11.2
     endcenterline
   endsurvey
+
+  survey zig_zag3
+    centerline 
+      team "Fabio Rueda"
+      date 2024.01.13
+      calibrate depth 0 -1 #Pongo la profundidad en negativo
+      calibrate tape 0 1 # Nudos cada 1 m
+		  cs EPSG:25831
+      mark fixed
+      station 4 "La T fatidica"
+      data diving station depth newline  tape compass
+      flags splay
+      0 10.7
+        2 100
+      flags not splay
+      1 10
+        7 110
+      2 8.8
+        12 50
+      3 8 
+        5 70
+      flags approx
+      4 8.5
+        5 45
+      5 11
+    endcenterline
+  endsurvey
+
+  
+
+  survey zig_zag_pozo
+    centerline 
+      team "Fabio Rueda"
+      date 2024.01.13
+      calibrate depth 0 -1 #Pongo la profundidad en negativo
+      calibrate tape 0 1 # Nudos cada 1 m
+		  cs EPSG:25831
+      mark fixed
+      station 0 "La T fatidica"
+      data diving station depth newline  tape compass
+      flags approx
+      0 8.5
+        3 130
+      1 11
+    endcenterline
+  endsurvey
+
+  equate 0@zig_zag3 4@zig_zag1
+  equate 4@zig_zag3 0@zig_zag_pozo
 
   survey ventana_larga 
     centerline 
@@ -184,8 +238,6 @@ survey las_T  -title "De_100_a_200"
       3 11
     endcenterline
   endsurvey
-
-
 
   survey chara1
     survey chara1_1
@@ -262,7 +314,7 @@ survey las_T  -title "De_100_a_200"
   endsurvey
 
   equate 2@bucle 20@bucle
-  equate 4@bucle 0@zig_zag1
+  equate 4@bucle 9@zig_zag1
   equate 9@bucle 5@ventana_larga
   equate 10@bucle 3@ventana_corta
   equate 11@bucle 0@eje1.la_cruz
@@ -276,6 +328,9 @@ survey las_T  -title "De_100_a_200"
 	map poly -projection plan
     bucle
     zig_zag1
+    #zig_zag2
+    zig_zag3
+    zig_zag_pozo
     ventana_larga
     ventana_corta
     la_cruz

@@ -22,7 +22,7 @@ survey CDA  -title "Cueva_del_Agua"
   # Saltos entre las T y los 200-300
   equate 3@hilo_pral.200_300 0@ventana_corta.las_T
   equate 4@hilo_pral.200_300 0@ventana_larga.las_T
-  equate 5@hilo_pral.200_300 7@zig_zag1.las_T
+  equate 5@hilo_pral.200_300 0@zig_zag1.las_T
   equate 1@chara1_2.chara1.las_T 5@chara3.200_300
 
   # No selecciono mapas con scraps solo poly

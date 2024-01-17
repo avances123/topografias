@@ -46,7 +46,7 @@ survey 200_300  -title "De_200_a_300"
   endsurvey
 
 
-  survey salto_1 
+  survey salto_1
     centerline 
       team "Fabio Rueda"
       date 2024.01.12
@@ -54,18 +54,73 @@ survey 200_300  -title "De_200_a_300"
       calibrate tape 0 1 # Nudos cada 1 m
 		  cs EPSG:25831
       mark fixed
+      station 6 "T con una flecha roja"
       data diving station depth newline  tape compass
       flags splay
-      0 11.1
-        1 160
+      0 11.7
+        1 180
       flags not splay
+      1 11.9
+        10 180
+      2 9.9
+        9.5 160
+      3 11.4
+        6 85
+      4 11.4
+        7 10
+      5 9.9
+        10 40
+      6 12.7
+        7 25
       flags approx
-      1 11.3
-        4 110
+      7 12
+        6 10
+      8 11
+    endcenterline
+  endsurvey
+
+
+  survey hacia_galeria_estrecha_zig_zag
+    centerline 
+      team "Fabio Rueda"
+      date 2024.01.14
+      calibrate depth 0 -1 #Pongo la profundidad en negativo
+      calibrate tape 0 1 # Nudos cada 1 m
+		  cs EPSG:25831
+      mark fixed
+      station 0 "La T"
+      data diving station depth newline  tape compass
+      flags approx
+      0 10.7
+        8 35
+      1 11
+
+    endcenterline
+  endsurvey
+
+
+  survey hacia_galeria_la_T_fatidica
+    centerline 
+      team "Fabio Rueda"
+      date 2024.01.14
+      calibrate depth 0 -1 #Pongo la profundidad en negativo
+      calibrate tape 0 1 # Nudos cada 1 m
+		  cs EPSG:25831
+      mark fixed
+      station 0 "La T"
+      data diving station depth newline  tape compass
+      flags approx
+      0 10.7
+        2 100
+      1 11
+        15 200
       2 11
     endcenterline
   endsurvey
 
+
+  equate 0@hacia_galeria_la_T_fatidica 6@salto_1
+  equate 1@hacia_galeria_la_T_fatidica 0@hacia_galeria_estrecha_zig_zag
 
   survey salto_2
     centerline 
@@ -82,7 +137,7 @@ survey 200_300  -title "De_200_a_300"
       flags not splay
       flags approx
       1 11.3
-        4 150
+        4 190
       2 11
     endcenterline
   endsurvey
@@ -152,6 +207,8 @@ survey 200_300  -title "De_200_a_300"
     derecha_abajo
     salto_1
     salto_2
+    hacia_galeria_estrecha_zig_zag
+    hacia_galeria_la_T_fatidica
 	endmap
 
   # input cova.th2

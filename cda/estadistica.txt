@@ -1,5 +1,5 @@
 Title	Length	Depth	Explored	Approx.	Duplicate	Surface	Shots	Stations
-Cueva_del_Agua	1092	12	0	131	0	0	182	218
+Cueva_del_Agua	1197	12	0	166	0	0	199	239
   Las_Gemelas	164	10	0	0	0	0	21	27
     gemelas1	68	7	0	0	0	0	9	10
     gemelas2	13	4	0	0	0	0	1	2
@@ -22,21 +22,25 @@ Cueva_del_Agua	1092	12	0	131	0	0	182	218
       restriccion1	26	2	0	0	0	0	5	6
       restriccion2	18	2	0	0	0	0	3	4
       restriccion3	8	0	0	0	0	0	1	2
-  De_100_a_200	402	3	0	90	0	0	57	66
+  De_100_a_200	430	4	0	98	0	0	65	76
     bucle	177	2	0	0	0	0	20	21
     la_cruz	63	1	0	63	0	0	10	12
       eje1	36	1	0	36	0	0	6	7
       eje2	27	1	0	27	0	0	4	5
-    zig_zag1	61	0	0	0	0	0	7	8
+    zig_zag1	58	2	0	0	0	0	9	10
+    zig_zag3	29	3	0	5	0	0	5	6
+    zig_zag_pozo	3	3	0	3	0	0	1	2
     ventana_larga	16	0	0	0	0	0	5	6
     ventana_corta	6	0	0	0	0	0	3	4
     chara1	48	3	0	5	0	0	7	9
       chara1_1	30	3	0	5	0	0	5	6
       chara1_2	18	0	0	0	0	0	2	3
     chara2	31	1	0	22	0	0	5	6
-  De_200_a_300	144	4	0	16	0	0	24	29
+  De_200_a_300	221	4	0	43	0	0	33	40
     hilo_pral	106	1	0	0	0	0	12	13
-    salto_1	4	0	0	4	0	0	2	3
+    salto_1	56	3	0	6	0	0	8	9
+    hacia_galeria_estrecha_zig_zag	8	0	0	8	0	0	1	2
+    hacia_galeria_la_T_fatidica	17	0	0	17	0	0	2	3
     salto_2	4	0	0	4	0	0	2	3
     derecha_abajo	11	2	0	8	0	0	3	4
     chara3	19	2	0	0	0	0	5	6
