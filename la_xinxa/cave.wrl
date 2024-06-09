@@ -1,0 +1,185 @@
+#VRML V2.0 utf8
+
+Transform { children [
+Shape {
+appearance Appearance {
+	material Material {
+		emissiveColor 0.3 0.7 1.0
+	}
+}
+geometry IndexedLineSet {
+coord Coordinate {
+	point [
+	    0.00     0.00     0.00,
+	   -3.95     4.29     2.20,
+	  -14.74   -10.81     3.30,
+	  -17.59    -8.70     6.40,
+	  -14.73   -14.40     6.00,
+	   -8.64   -18.95     6.60,
+	  -10.84   -22.77     4.70,
+	  -13.29   -21.05     4.90,
+	    2.92   -24.34     3.20,
+	  -10.29    -9.51     2.80,
+	]
+}
+	coordIndex [
+	     0, 	     1, 	     2, 	     3, 	     4, 	     5, 	     6, 	     7, -1,
+	     5, 	     8, -1,
+	     5, 	     9, 	     0, -1,
+	]
+
+}
+}
+Shape {
+appearance Appearance {
+	material Material {
+		emissiveColor 0.5 0.5 0.5
+	}
+}
+geometry IndexedLineSet {
+coord Coordinate {
+	point [
+	]
+}
+	coordIndex [
+	]
+
+}
+}
+Shape {
+appearance Appearance {
+	material Material {
+		emissiveColor 0.22 0.22 0.22
+	}
+}
+geometry IndexedLineSet {
+coord Coordinate {
+	point [
+	]
+}
+	coordIndex [
+	]
+
+}
+}
+Group {
+	children[
+DirectionalLight {
+	on TRUE
+	intensity  1.0
+	direction  0 0 -1
+}DirectionalLight {
+	on TRUE
+	intensity  1.0
+	direction  0 0  1
+}	]
+}
+Shape {
+appearance Appearance {
+	material Material {
+		diffuseColor 1.0 1.0 1.0
+	}
+}
+geometry IndexedFaceSet {
+coord Coordinate {
+	point [
+	]
+}
+	coordIndex [
+	]
+creaseAngle 3.0
+}
+}
+Shape {
+appearance Appearance {
+	material Material {
+		emissiveColor 1.0 0.0 0.0
+	}
+}
+geometry IndexedLineSet {
+coord Coordinate {
+	point [
+  -17.59   -24.34     0.00,
+  -17.59     4.29     0.00,
+    2.92     4.29     0.00,
+    2.92   -24.34     0.00,
+  -17.59   -24.34     6.60,
+  -17.59     4.29     6.60,
+    2.92     4.29     6.60,
+    2.92   -24.34     6.60,
+	]
+}
+	coordIndex [
+0, 1, 2, 3, 0, 4, 5, 6, 7, 4, -1,
+1, 5, -1,
+2, 6, -1,
+3, 7, -1,
+	]
+
+}
+}
+
+]
+translation     7.33    10.03    -3.30} # end of transformation to center
+Viewpoint {
+	fieldOfView 0.42
+	jump TRUE
+	position 0.0 0.0    84.01
+	description "Down"
+}
+Viewpoint {
+	fieldOfView 0.42
+	jump TRUE
+	position 0.0 0.0   -84.01
+	orientation 1 0 0 3.14159
+	description "Up"
+}
+Viewpoint {
+	fieldOfView 0.42
+	jump TRUE
+	position 0.0   -63.70 0.0
+	orientation 1 0 0 1.570796
+	description "North"
+}
+Transform {
+	rotation 0 0 1 1.570796
+	children
+Viewpoint {
+	fieldOfView 0.42
+	jump TRUE
+	position 0.0   -77.59 0.0
+	orientation 1 0 0 1.570796
+	description "West"
+}
+}
+Transform {
+	rotation 0 0 1 -1.570796
+	children
+Viewpoint {
+	fieldOfView 0.42
+	jump TRUE
+	position 0.0   -77.59 0.0
+	orientation 1 0 0 1.570796
+	description "East"
+}
+}
+Transform {
+	rotation 0 0 1 3.1415927
+	children
+Viewpoint {
+	fieldOfView 0.42
+	jump TRUE
+	position 0.0   -63.70 0.0
+	orientation 1 0 0 1.570796
+	description "South"
+}
+}
+
+NavigationInfo {
+	headlight TRUE
+	speed 1.8
+}
+Background {
+	skyColor 0 0 0
+}
+

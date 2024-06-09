@@ -3,6 +3,7 @@ encoding  utf-8
  source cova.th
  
  layout todo
+ debug all
  symbol-show group centerline
 # legend on
 
@@ -31,6 +32,7 @@ encoding  utf-8
  
  
  export model -fmt loch
+ export model -fmt vrml
  export map -layout todo -projection plan  -o cave_m.pdf
  export map -layout todo -projection extended  -o cave_ex.pdf
 export map -layout todo -projection [elevation 280]  -o cave_el.pdf
