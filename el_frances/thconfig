@@ -1,0 +1,44 @@
+encoding  utf-8
+ language es
+ source cova.th
+ 
+ layout todo
+ debug all
+ symbol-show group centerline
+# legend on
+
+# map-header -40 100 nw
+ rotate 100 #on
+
+
+
+ code metapost
+ 
+   def l_survey_cave (expr P) =
+     T:=identity;
+     pair zz[];
+     pickup PenC;
+     for t = 0 upto length P - 1:
+       zz1 := point t of P;
+       zz2 := point t+1 of P;
+       draw zz1 -- zz2 withcolor (0.8,0.0,0.0);
+     endfor;
+   enddef;
+ 
+ 
+ endlayout
+ 
+ 
+ 
+ 
+ export model -fmt loch
+ export model -fmt vrml
+ export map -layout todo -projection plan  -o cave_m.pdf
+ export map -layout todo -projection extended  -o cave_ex.pdf
+export map -layout todo -projection [elevation 280]  -o cave_el.pdf
+
+
+
+ #export atlas -projection plan -o cave_a.pdf
+ export model -fmt kml -output cueva_del_frances.kml
+ #export cave-list -location on

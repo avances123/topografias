@@ -1,0 +1,42 @@
+encoding  utf-8
+survey la_xinxa  -title "Cueva del Frances"
+	
+
+		survey el_frances -entrance 0
+			centerline
+				team "Fabio Rueda"
+				date 2024.08.26
+				calibrate depth 0 -1 #Pongo la profundidad en negativo
+				calibrate tape 0 1 # Nudos cada 1 m
+				cs EPSG:25831
+				fix 0 517049.68 4657788.51 -17
+				data diving station depth newline tape compass 
+				0 17
+					18 180
+				1 23
+					6 250
+				2 26
+					5 210
+				3 25  # Nudo al hilo pral
+					7 210
+				4 27
+					3 270
+				5 27
+					4 215
+				6 28 # pegatina de los 60m
+				# Inventado
+					5 280   # el rumbo es correcto
+				7 28 # minuto 40:00 en el pov1
+			endcenterline
+		endsurvey
+
+
+
+
+	# input cova.th2
+	# map mapa -projection plan
+	# 	scrap1
+	# endmap
+	
+endsurvey
+
